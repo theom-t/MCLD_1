@@ -1,0 +1,38 @@
+[project]
+name = "mcld-1"
+version = "0.1.0"
+description = "Macro-Cycle Latent Dynamics Model (MCLD-1)"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "polars>=0.20.0",
+    "pyarrow>=15.0.0",
+    "arcticdb>=1.6.1",
+    "gpytorch>=1.11",
+    "vectorbt>=0.25.0",
+    "nautilus-trader>=1.193.0",
+    "riskfolio-lib>=5.0.0",
+    "pyqlib>=0.9.1",
+    "optuna>=3.6.1",
+    "shap>=0.45.0",
+    "captum>=0.7.0",
+    "scipy>=1.12.0",
+    "numpy>=1.26.0",
+    "pyyaml>=6.0.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "jupyter>=1.0.0",
+    "notebook>=7.0.0",
+    "matplotlib>=3.8.0",
+    "seaborn>=0.13.0",
+    "ruff>=0.3.0",
+]
+
+
+[tool.uv]
+# Depending on the RTX 5090 Blackwell setup, you may need to override 
+# the torch installation to use the nightly index as per user environment rules.
+# This pyproject standardises the required packages.

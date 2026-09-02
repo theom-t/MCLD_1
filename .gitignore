@@ -1,0 +1,107 @@
+# ==============================================================================
+# DATA - NEVER COMMIT DATA TO VERSION CONTROL
+# ==============================================================================
+data/
+data_raw/
+data_processed/
+data_cache/
+
+# Databases & ArcticDB local storage
+*.db
+*.sqlite
+*.sqlite3
+*.lmdb
+*.mdb
+
+# Flat files & SerDes
+*.csv
+*.tsv
+*.parquet
+*.arrow
+*.feather
+*.jsonl
+*.h5
+*.hdf5
+*.nc
+
+# ==============================================================================
+# MACHINE LEARNING & MODELS
+# ==============================================================================
+# Checkpoints & Weights
+checkpoints/
+models/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.pkl
+*.joblib
+
+# Logs & Visualisation
+logs/
+runs/
+tb_logs/
+mlruns/
+wandb/
+
+# ==============================================================================
+# PYTHON & ENVIRONMENT
+# ==============================================================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments
+.env
+.venv/
+venv/
+env/
+ENV/
+*.virtualenv
+
+# UV and pip
+uv.lock
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# ==============================================================================
+# BUILD & DISTRIBUTION
+# ==============================================================================
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ==============================================================================
+# OS & IDE
+# ==============================================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+.vscode/
+.idea/
+*.swp
+*.swo
