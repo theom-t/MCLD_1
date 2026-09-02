@@ -1,0 +1,103 @@
+# MCLD-1 Stage 1 Data Pipeline Configuration
+# Defines the nations, features, and precise API mapping for bitemporal ingestion.
+
+# =============================================================================
+# IMF SDDS Conservative Lag Offsets
+# Used to reconstruct `release_date` for sources without ALFRED vintage history.
+# =============================================================================
+sdds_lag_offsets_days:
+  policy_rate: 1
+  m2_money: 15
+  cpi: 30
+  unemployment: 30
+  industrial_production: 45
+  trade_balance: 60
+  gdp_quarterly: 90
+  fdi_flows: 90
+
+# =============================================================================
+# Target Nations (ISO-2)
+# We track all 48, but populate explicitly as we map series.
+# =============================================================================
+nations:
+  # Tier 1 (Full-Cycle)
+  - CN
+  - KR
+  - JP
+  - TR
+  - RU
+  - BR
+  - AR
+  - ZA
+  # Tier 2 (Peak)
+  - US
+  - GB
+  - DE
+  - FR
+  - CA
+  # (Remaining 35 to be mapped...)
+
+# =============================================================================
+# Feature Mappings
+# Maps a generic `feature_id` to exact source API codes.
+# =============================================================================
+features:
+
+  # --- Monetary & Debt ---
+  cpi_yoy:
+    domain: "Monetary & Debt"
+    sdds_category: "cpi"
+    transform: "pct_change_12m"  # Instruction for panel_sync.py
+    sources:
+      US: { source: "FRED", series_id: "CPIAUCSL" }
+      GB: { source: "FRED", series_id: "GBRCPIALLMINMEI" }
+      DE: { source: "FRED", series_id: "DEUCPIALLMINMEI" }
+      JP: { source: "FRED", series_id: "JPNCPIALLMINMEI" }
+      CN: { source: "FRED", series_id: "CHNCPIALLMINMEI" }
+      BR: { source: "FRED", series_id: "BRACPIALLMINMEI" }
+
+  policy_rate:
+    domain: "Monetary & Debt"
+    sdds_category: "policy_rate"
+    transform: "level"
+    sources:
+      US: { source: "FRED", series_id: "FEDFUNDS" }
+      GB: { source: "DBNOMICS", series_id: "BIS/WS_CBPOL/M.GB" }
+      DE: { source: "DBNOMICS", series_id: "BIS/WS_CBPOL/M.XM" } # Euro Area
+      JP: { source: "DBNOMICS", series_id: "BIS/WS_CBPOL/M.JP" }
+      CN: { source: "DBNOMICS", series_id: "BIS/WS_CBPOL/M.CN" }
+      BR: { source: "DBNOMICS", series_id: "BIS/WS_CBPOL/M.BR" }
+
+  m2_money:
+    domain: "Monetary & Debt"
+    sdds_category: "m2_money"
+    transform: "log_diff"
+    sources:
+      US: { source: "FRED", series_id: "WM2NS" }
+      GB: { source: "FRED", series_id: "MABMM201GBM189S" }
+      JP: { source: "FRED", series_id: "MYAGM2JPM189S" }
+      CN: { source: "FRED", series_id: "MYAGM2CNM189N" }
+      BR: { source: "FRED", series_id: "MYAGM2BRM189N" }
+
+  # --- Internal Order ---
+  unemployment:
+    domain: "Internal Order"
+    sdds_category: "unemployment"
+    transform: "level"
+    sources:
+      US: { source: "FRED", series_id: "UNRATE" }
+      GB: { source: "FRED", series_id: "LMUNRRTTGBM156S" }
+      DE: { source: "FRED", series_id: "LMUNRRTTDEM156S" }
+      JP: { source: "FRED", series_id: "LMUNRRTTJPM156S" }
+      BR: { source: "FRED", series_id: "LMUNRRTTBRM156S" }
+
+  industrial_production:
+    domain: "Internal Order"
+    sdds_category: "industrial_production"
+    transform: "log_diff"
+    sources:
+      US: { source: "FRED", series_id: "INDPRO" }
+      GB: { source: "FRED", series_id: "GBRPROINDMISMEI" }
+      DE: { source: "FRED", series_id: "DEUPROINDMISMEI" }
+      JP: { source: "FRED", series_id: "JPNPROINDMISMEI" }
+      BR: { source: "FRED", series_id: "BRAPROINDMISMEI" }
