@@ -50,7 +50,15 @@ The system is built in 5 sequential stages with strict validation gates:
 - **Fractional differencing.** When making time-series stationary, use fractional differencing with `d ∈ [0.2, 0.7]` to preserve long-term memory. Never default to `d=1` integer differencing.
 - **Missing data.** Use PCHIP interpolation with explicit binary masks. Never forward-fill without flagging.
 
-## Research & Writing Rules
+## Research & Decision Protocol
+
+This is a research project culminating in a whitepaper. You must strictly follow this workflow:
+
+1. **Discuss Before Coding:** Never make unilateral methodological or architectural decisions. Present options, discuss trade-offs, and align with the user before writing the implementation.
+2. **Consult Literature:** When evaluating a design choice, actively research what prior art and academic literature suggests. Use the `mcld-research` skill guidelines.
+3. **Log All Decisions:** Every time a project decision is finalized, you MUST record it in `docs/decision_log.md`. Include the decision made, the alternatives considered, and the theoretical or empirical rationale ("the why").
+
+## Whitepaper Formatting Rules
 
 - When writing research content, always cite specific metrics and thresholds from the project plan.
 - Mathematical notation must use LaTeX-compatible syntax.
