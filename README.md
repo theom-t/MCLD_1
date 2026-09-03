@@ -6,6 +6,17 @@ MCLD-1 is a self-supervised quantitative framework designed to:
 3. Model autonomous macro-cycle dynamics via a Sparse Variational GP (SVGP).
 4. Construct uncertainty-damped, friction-aware global macro portfolios.
 
+## Project Status
+
+- **Stage 1 (Bitemporal Data Ingestion & Stationarity):** ✅ **[COMPLETED]** 
+  - *Curated 34 Sovereign Nations across 23 core Dalio-cycle macroeconomic features (1950-2025).*
+  - *Successfully built strict backward-looking bitemporal ingestion pipeline.*
+  - *Pivoted stationarity engine to Reversible Instance Normalization (RevIN) to preserve secular memory.*
+- **Stage 2 (Temporal-JEPA):** 🚧 **[IN PROGRESS]**
+- **Stage 3 (SVGP Latent Dynamics):** ⏳ Pending
+- **Stage 4 (Risk Budgeting):** ⏳ Pending
+- **Stage 5 (Friction-Aware Backtest):** ⏳ Pending
+
 ## Project Structure
 
 This repository is modularly structured to support both research and deployment pipelines:
@@ -33,7 +44,7 @@ MCLD_1/
 This project uses `uv` for lightning-fast dependency management and resolution.
 
 > **Hardware Note (RTX 5090 / Blackwell):**  
-> As per global configuration, this project requires `pytorch-nightly` (CUDA 12.8/13.0 compatible) for the RTX 5090. Do NOT install conda PyTorch packages as they will conflict with the custom `dollar_alpha` library path setup.
+> As per global configuration, this project requires `jax[cuda12]` for the RTX 5090. Do NOT install conda CUDA packages as they will conflict with the custom `dollar_alpha` library path setup.
 
 ### 1. Create and Sync the Environment
 
@@ -43,13 +54,13 @@ Run the following to create the virtual environment (`.venv`) and sync standard 
 uv sync --extra dev
 ```
 
-### 2. Install PyTorch Nightly (Blackwell Support)
+### 2. Install JAX Nightly (Blackwell Support)
 
-Activate the environment and install PyTorch natively using the nightly index:
+Activate the environment and install JAX natively using the CUDA 12.4+ index:
 
 ```bash
 source .venv/bin/activate
-uv pip install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu128
+uv pip install -U "jax[cuda12]"
 ```
 
 ## Running the Pipeline

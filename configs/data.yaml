@@ -1,10 +1,3 @@
-# MCLD-1 Stage 1 Data Pipeline Configuration
-# Defines the nations, features, and precise API mapping for bitemporal ingestion.
-
-# =============================================================================
-# IMF SDDS Conservative Lag Offsets
-# Used to reconstruct `release_date` for sources without ALFRED vintage history.
-# =============================================================================
 sdds_lag_offsets_days:
   policy_rate: 1
   m2_money: 15
@@ -12,92 +5,1995 @@ sdds_lag_offsets_days:
   unemployment: 30
   industrial_production: 45
   trade_balance: 60
-  gdp_quarterly: 90
-  fdi_flows: 90
-
-# =============================================================================
-# Target Nations (ISO-2)
-# We track all 48, but populate explicitly as we map series.
-# =============================================================================
+  fx_reserves: 30
+  10y_yield: 1
+  housing: 90
+  stock_market: 15
+  confidence: 15
 nations:
-  # Tier 1 (Full-Cycle)
-  - CN
-  - KR
-  - JP
-  - TR
-  - RU
-  - BR
-  - AR
-  - ZA
-  # Tier 2 (Peak)
-  - US
-  - GB
-  - DE
-  - FR
-  - CA
-  # (Remaining 35 to be mapped...)
-
-# =============================================================================
-# Feature Mappings
-# Maps a generic `feature_id` to exact source API codes.
-# =============================================================================
+- CN
+- KR
+- JP
+- TR
+- RU
+- BR
+- AR
+- ZA
+- US
+- GB
+- DE
+- FR
+- IT
+- ES
+- NL
+- CH
+- AU
+- CA
+- IN
+- VN
+- ID
+- PL
+- CZ
+- MX
+- TH
+- MY
+- PH
+- CL
+- GR
+- PT
+- NG
+- EG
+- PK
+- CO
+- PE
+- HU
+- RO
+- IL
+- SA
+- AE
+- SG
+- 'NO'
+- SE
+- DK
+- NZ
+- FI
+- IE
+- BE
 features:
-
-  # --- Monetary & Debt ---
   cpi_yoy:
-    domain: "Monetary & Debt"
-    sdds_category: "cpi"
-    transform: "pct_change_12m"  # Instruction for panel_sync.py
+    domain: Monetary & Debt
+    sdds_category: cpi
+    transform: pct_change_12m
     sources:
-      US: { source: "FRED", series_id: "CPIAUCSL" }
-      GB: { source: "FRED", series_id: "GBRCPIALLMINMEI" }
-      DE: { source: "FRED", series_id: "DEUCPIALLMINMEI" }
-      JP: { source: "FRED", series_id: "JPNCPIALLMINMEI" }
-      CN: { source: "FRED", series_id: "CHNCPIALLMINMEI" }
-      BR: { source: "FRED", series_id: "BRACPIALLMINMEI" }
-
-  policy_rate:
-    domain: "Monetary & Debt"
-    sdds_category: "policy_rate"
-    transform: "level"
-    sources:
-      US: { source: "FRED", series_id: "FEDFUNDS" }
-      GB: { source: "DBNOMICS", series_id: "BIS/WS_CBPOL/M.GB" }
-      DE: { source: "DBNOMICS", series_id: "BIS/WS_CBPOL/M.XM" } # Euro Area
-      JP: { source: "DBNOMICS", series_id: "BIS/WS_CBPOL/M.JP" }
-      CN: { source: "DBNOMICS", series_id: "BIS/WS_CBPOL/M.CN" }
-      BR: { source: "DBNOMICS", series_id: "BIS/WS_CBPOL/M.BR" }
-
-  m2_money:
-    domain: "Monetary & Debt"
-    sdds_category: "m2_money"
-    transform: "log_diff"
-    sources:
-      US: { source: "FRED", series_id: "WM2NS" }
-      GB: { source: "FRED", series_id: "MABMM201GBM189S" }
-      JP: { source: "FRED", series_id: "MYAGM2JPM189S" }
-      CN: { source: "FRED", series_id: "MYAGM2CNM189N" }
-      BR: { source: "FRED", series_id: "MYAGM2BRM189N" }
-
-  # --- Internal Order ---
-  unemployment:
-    domain: "Internal Order"
-    sdds_category: "unemployment"
-    transform: "level"
-    sources:
-      US: { source: "FRED", series_id: "UNRATE" }
-      GB: { source: "FRED", series_id: "LMUNRRTTGBM156S" }
-      DE: { source: "FRED", series_id: "LMUNRRTTDEM156S" }
-      JP: { source: "FRED", series_id: "LMUNRRTTJPM156S" }
-      BR: { source: "FRED", series_id: "LMUNRRTTBRM156S" }
-
+      CN:
+        source: FRED
+        series_id: CHNCPIALLMINMEI
+      KR:
+        source: FRED
+        series_id: KORCPIALLMINMEI
+      JP:
+        source: FRED
+        series_id: JPNCPIALLMINMEI
+      TR:
+        source: FRED
+        series_id: TURCPIALLMINMEI
+      RU:
+        source: FRED
+        series_id: RUSCPIALLMINMEI
+      BR:
+        source: FRED
+        series_id: BRACPIALLMINMEI
+      AR:
+        source: FRED
+        series_id: ARGCPIALLMINMEI
+      ZA:
+        source: FRED
+        series_id: ZAFCPIALLMINMEI
+      US:
+        source: FRED
+        series_id: CPIAUCSL
+      GB:
+        source: FRED
+        series_id: GBRCPIALLMINMEI
+      DE:
+        source: FRED
+        series_id: DEUCPIALLMINMEI
+      FR:
+        source: FRED
+        series_id: FRACPIALLMINMEI
+      IT:
+        source: FRED
+        series_id: ITACPIALLMINMEI
+      ES:
+        source: FRED
+        series_id: ESPCPIALLMINMEI
+      NL:
+        source: FRED
+        series_id: NLDCPIALLMINMEI
+      CH:
+        source: FRED
+        series_id: CHECPIALLMINMEI
+      AU:
+        source: FRED
+        series_id: AUSCPIALLMINMEI
+      CA:
+        source: FRED
+        series_id: CANCPIALLMINMEI
+      IN:
+        source: FRED
+        series_id: INDCPIALLMINMEI
+      VN:
+        source: FRED
+        series_id: VNMCPIALLMINMEI
+      ID:
+        source: FRED
+        series_id: IDNCPIALLMINMEI
+      PL:
+        source: FRED
+        series_id: POLCPIALLMINMEI
+      CZ:
+        source: FRED
+        series_id: CZECPIALLMINMEI
+      MX:
+        source: FRED
+        series_id: MEXCPIALLMINMEI
+      TH:
+        source: FRED
+        series_id: THACPIALLMINMEI
+      MY:
+        source: FRED
+        series_id: MYSCPIALLMINMEI
+      PH:
+        source: FRED
+        series_id: PHLCPIALLMINMEI
+      CL:
+        source: FRED
+        series_id: CHLCPIALLMINMEI
+      GR:
+        source: FRED
+        series_id: GRCCPIALLMINMEI
+      PT:
+        source: FRED
+        series_id: PRTCPIALLMINMEI
+      NG:
+        source: FRED
+        series_id: NGACPIALLMINMEI
+      EG:
+        source: FRED
+        series_id: EGYCPIALLMINMEI
+      PK:
+        source: FRED
+        series_id: PAKCPIALLMINMEI
+      CO:
+        source: FRED
+        series_id: COLCPIALLMINMEI
+      PE:
+        source: FRED
+        series_id: PERCPIALLMINMEI
+      HU:
+        source: FRED
+        series_id: HUNCPIALLMINMEI
+      RO:
+        source: FRED
+        series_id: ROUCPIALLMINMEI
+      IL:
+        source: FRED
+        series_id: ISRCPIALLMINMEI
+      SA:
+        source: FRED
+        series_id: SAUCPIALLMINMEI
+      AE:
+        source: FRED
+        series_id: ARECPIALLMINMEI
+      SG:
+        source: FRED
+        series_id: SGPCPIALLMINMEI
+      'NO':
+        source: FRED
+        series_id: NORCPIALLMINMEI
+      SE:
+        source: FRED
+        series_id: SWECPIALLMINMEI
+      DK:
+        source: FRED
+        series_id: DNKCPIALLMINMEI
+      NZ:
+        source: FRED
+        series_id: NZLCPIALLMINMEI
+      FI:
+        source: FRED
+        series_id: FINCPIALLMINMEI
+      IE:
+        source: FRED
+        series_id: IRLCPIALLMINMEI
+      BE:
+        source: FRED
+        series_id: BELCPIALLMINMEI
   industrial_production:
-    domain: "Internal Order"
-    sdds_category: "industrial_production"
-    transform: "log_diff"
+    domain: Internal Order
+    sdds_category: industrial_production
+    transform: log_diff
     sources:
-      US: { source: "FRED", series_id: "INDPRO" }
-      GB: { source: "FRED", series_id: "GBRPROINDMISMEI" }
-      DE: { source: "FRED", series_id: "DEUPROINDMISMEI" }
-      JP: { source: "FRED", series_id: "JPNPROINDMISMEI" }
-      BR: { source: "FRED", series_id: "BRAPROINDMISMEI" }
+      CN:
+        source: FRED
+        series_id: CHNPROINDMISMEI
+      KR:
+        source: FRED
+        series_id: KORPROINDMISMEI
+      JP:
+        source: FRED
+        series_id: JPNPROINDMISMEI
+      TR:
+        source: FRED
+        series_id: TURPROINDMISMEI
+      RU:
+        source: FRED
+        series_id: RUSPROINDMISMEI
+      BR:
+        source: FRED
+        series_id: BRAPROINDMISMEI
+      AR:
+        source: FRED
+        series_id: ARGPROINDMISMEI
+      ZA:
+        source: FRED
+        series_id: ZAFPROINDMISMEI
+      US:
+        source: FRED
+        series_id: INDPRO
+      GB:
+        source: FRED
+        series_id: GBRPROINDMISMEI
+      DE:
+        source: FRED
+        series_id: DEUPROINDMISMEI
+      FR:
+        source: FRED
+        series_id: FRAPROINDMISMEI
+      IT:
+        source: FRED
+        series_id: ITAPROINDMISMEI
+      ES:
+        source: FRED
+        series_id: ESPPROINDMISMEI
+      NL:
+        source: FRED
+        series_id: NLDPROINDMISMEI
+      CH:
+        source: FRED
+        series_id: CHEPROINDMISMEI
+      AU:
+        source: FRED
+        series_id: AUSPROINDMISMEI
+      CA:
+        source: FRED
+        series_id: CANPROINDMISMEI
+      IN:
+        source: FRED
+        series_id: INDPROINDMISMEI
+      VN:
+        source: FRED
+        series_id: VNMPROINDMISMEI
+      ID:
+        source: FRED
+        series_id: IDNPROINDMISMEI
+      PL:
+        source: FRED
+        series_id: POLPROINDMISMEI
+      CZ:
+        source: FRED
+        series_id: CZEPROINDMISMEI
+      MX:
+        source: FRED
+        series_id: MEXPROINDMISMEI
+      TH:
+        source: FRED
+        series_id: THAPROINDMISMEI
+      MY:
+        source: FRED
+        series_id: MYSPROINDMISMEI
+      PH:
+        source: FRED
+        series_id: PHLPROINDMISMEI
+      CL:
+        source: FRED
+        series_id: CHLPROINDMISMEI
+      GR:
+        source: FRED
+        series_id: GRCPROINDMISMEI
+      PT:
+        source: FRED
+        series_id: PRTPROINDMISMEI
+      NG:
+        source: FRED
+        series_id: NGAPROINDMISMEI
+      EG:
+        source: FRED
+        series_id: EGYPROINDMISMEI
+      PK:
+        source: FRED
+        series_id: PAKPROINDMISMEI
+      CO:
+        source: FRED
+        series_id: COLPROINDMISMEI
+      PE:
+        source: FRED
+        series_id: PERPROINDMISMEI
+      HU:
+        source: FRED
+        series_id: HUNPROINDMISMEI
+      RO:
+        source: FRED
+        series_id: ROUPROINDMISMEI
+      IL:
+        source: FRED
+        series_id: ISRPROINDMISMEI
+      SA:
+        source: FRED
+        series_id: SAUPROINDMISMEI
+      AE:
+        source: FRED
+        series_id: AREPROINDMISMEI
+      SG:
+        source: FRED
+        series_id: SGPPROINDMISMEI
+      'NO':
+        source: FRED
+        series_id: NORPROINDMISMEI
+      SE:
+        source: FRED
+        series_id: SWEPROINDMISMEI
+      DK:
+        source: FRED
+        series_id: DNKPROINDMISMEI
+      NZ:
+        source: FRED
+        series_id: NZLPROINDMISMEI
+      FI:
+        source: FRED
+        series_id: FINPROINDMISMEI
+      IE:
+        source: FRED
+        series_id: IRLPROINDMISMEI
+      BE:
+        source: FRED
+        series_id: BELPROINDMISMEI
+  unemployment:
+    domain: Internal Order
+    sdds_category: unemployment
+    transform: level
+    sources:
+      CN:
+        source: FRED
+        series_id: LMUNRRTTCNM156S
+      KR:
+        source: FRED
+        series_id: LMUNRRTTKRM156S
+      JP:
+        source: FRED
+        series_id: LMUNRRTTJPM156S
+      TR:
+        source: FRED
+        series_id: LMUNRRTTTRM156S
+      RU:
+        source: FRED
+        series_id: LMUNRRTTRUM156S
+      BR:
+        source: FRED
+        series_id: LMUNRRTTBRM156S
+      AR:
+        source: FRED
+        series_id: LMUNRRTTARM156S
+      ZA:
+        source: FRED
+        series_id: LMUNRRTTZAM156S
+      US:
+        source: FRED
+        series_id: UNRATE
+      GB:
+        source: FRED
+        series_id: LMUNRRTTGBM156S
+      DE:
+        source: FRED
+        series_id: LMUNRRTTDEM156S
+      FR:
+        source: FRED
+        series_id: LMUNRRTTFRM156S
+      IT:
+        source: FRED
+        series_id: LMUNRRTTITM156S
+      ES:
+        source: FRED
+        series_id: LMUNRRTTESM156S
+      NL:
+        source: FRED
+        series_id: LMUNRRTTNLM156S
+      CH:
+        source: FRED
+        series_id: LMUNRRTTCHM156S
+      AU:
+        source: FRED
+        series_id: LMUNRRTTAUM156S
+      CA:
+        source: FRED
+        series_id: LMUNRRTTCAM156S
+      IN:
+        source: FRED
+        series_id: LMUNRRTTINM156S
+      VN:
+        source: FRED
+        series_id: LMUNRRTTVNM156S
+      ID:
+        source: FRED
+        series_id: LMUNRRTTIDM156S
+      PL:
+        source: FRED
+        series_id: LMUNRRTTPLM156S
+      CZ:
+        source: FRED
+        series_id: LMUNRRTTCZM156S
+      MX:
+        source: FRED
+        series_id: LMUNRRTTMXM156S
+      TH:
+        source: FRED
+        series_id: LMUNRRTTTHM156S
+      MY:
+        source: FRED
+        series_id: LMUNRRTTMYM156S
+      PH:
+        source: FRED
+        series_id: LMUNRRTTPHM156S
+      CL:
+        source: FRED
+        series_id: LMUNRRTTCLM156S
+      GR:
+        source: FRED
+        series_id: LMUNRRTTGRM156S
+      PT:
+        source: FRED
+        series_id: LMUNRRTTPTM156S
+      NG:
+        source: FRED
+        series_id: LMUNRRTTNGM156S
+      EG:
+        source: FRED
+        series_id: LMUNRRTTEGM156S
+      PK:
+        source: FRED
+        series_id: LMUNRRTTPKM156S
+      CO:
+        source: FRED
+        series_id: LMUNRRTTCOM156S
+      PE:
+        source: FRED
+        series_id: LMUNRRTTPEM156S
+      HU:
+        source: FRED
+        series_id: LMUNRRTTHUM156S
+      RO:
+        source: FRED
+        series_id: LMUNRRTTROM156S
+      IL:
+        source: FRED
+        series_id: LMUNRRTTILM156S
+      SA:
+        source: FRED
+        series_id: LMUNRRTTSAM156S
+      AE:
+        source: FRED
+        series_id: LMUNRRTTAEM156S
+      SG:
+        source: FRED
+        series_id: LMUNRRTTSGM156S
+      'NO':
+        source: FRED
+        series_id: LMUNRRTTNOM156S
+      SE:
+        source: FRED
+        series_id: LMUNRRTTSEM156S
+      DK:
+        source: FRED
+        series_id: LMUNRRTTDKM156S
+      NZ:
+        source: FRED
+        series_id: LMUNRRTTNZM156S
+      FI:
+        source: FRED
+        series_id: LMUNRRTTFIM156S
+      IE:
+        source: FRED
+        series_id: LMUNRRTTIEM156S
+      BE:
+        source: FRED
+        series_id: LMUNRRTTBEM156S
+  policy_rate:
+    domain: Monetary & Debt
+    sdds_category: policy_rate
+    transform: level
+    sources:
+      CN:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.CN
+      KR:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.KR
+      JP:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.JP
+      TR:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.TR
+      RU:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.RU
+      BR:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.BR
+      AR:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.AR
+      ZA:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.ZA
+      US:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.US
+      GB:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.GB
+      DE:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.XM
+      FR:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.XM
+      IT:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.XM
+      ES:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.XM
+      NL:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.XM
+      CH:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.CH
+      AU:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.AU
+      CA:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.CA
+      IN:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.IN
+      VN:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.VN
+      ID:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.ID
+      PL:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.PL
+      CZ:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.CZ
+      MX:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.MX
+      TH:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.TH
+      MY:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.MY
+      PH:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.PH
+      CL:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.CL
+      GR:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.XM
+      PT:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.XM
+      NG:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.NG
+      EG:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.EG
+      PK:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.PK
+      CO:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.CO
+      PE:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.PE
+      HU:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.HU
+      RO:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.RO
+      IL:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.IL
+      SA:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.SA
+      AE:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.AE
+      SG:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.SG
+      'NO':
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.NO
+      SE:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.SE
+      DK:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.DK
+      NZ:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.NZ
+      FI:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.XM
+      IE:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.XM
+      BE:
+        source: DBNOMICS
+        series_id: BIS/WS_CBPOL/M.XM
+  m2_money:
+    domain: Monetary & Debt
+    sdds_category: m2_money
+    transform: log_diff
+    sources:
+      CN:
+        source: FRED
+        series_id: MYAGM2CNM189N
+      KR:
+        source: FRED
+        series_id: MYAGM2KRM189N
+      JP:
+        source: FRED
+        series_id: MYAGM2JPM189N
+      TR:
+        source: FRED
+        series_id: MYAGM2TRM189N
+      RU:
+        source: FRED
+        series_id: MYAGM2RUM189N
+      BR:
+        source: FRED
+        series_id: MYAGM2BRM189N
+      AR:
+        source: FRED
+        series_id: MYAGM2ARM189N
+      ZA:
+        source: FRED
+        series_id: MYAGM2ZAM189N
+      US:
+        source: FRED
+        series_id: WM2NS
+      GB:
+        source: FRED
+        series_id: MYAGM2GBM189N
+      DE:
+        source: FRED
+        series_id: MYAGM2DEM189N
+      FR:
+        source: FRED
+        series_id: MYAGM2FRM189N
+      IT:
+        source: FRED
+        series_id: MYAGM2ITM189N
+      ES:
+        source: FRED
+        series_id: MYAGM2ESM189N
+      NL:
+        source: FRED
+        series_id: MYAGM2NLM189N
+      CH:
+        source: FRED
+        series_id: MYAGM2CHM189N
+      AU:
+        source: FRED
+        series_id: MYAGM2AUM189N
+      CA:
+        source: FRED
+        series_id: MYAGM2CAM189N
+      IN:
+        source: FRED
+        series_id: MYAGM2INM189N
+      VN:
+        source: FRED
+        series_id: MYAGM2VNM189N
+      ID:
+        source: FRED
+        series_id: MYAGM2IDM189N
+      PL:
+        source: FRED
+        series_id: MYAGM2PLM189N
+      CZ:
+        source: FRED
+        series_id: MYAGM2CZM189N
+      MX:
+        source: FRED
+        series_id: MYAGM2MXM189N
+      TH:
+        source: FRED
+        series_id: MYAGM2THM189N
+      MY:
+        source: FRED
+        series_id: MYAGM2MYM189N
+      PH:
+        source: FRED
+        series_id: MYAGM2PHM189N
+      CL:
+        source: FRED
+        series_id: MYAGM2CLM189N
+      GR:
+        source: FRED
+        series_id: MYAGM2GRM189N
+      PT:
+        source: FRED
+        series_id: MYAGM2PTM189N
+      NG:
+        source: FRED
+        series_id: MYAGM2NGM189N
+      EG:
+        source: FRED
+        series_id: MYAGM2EGM189N
+      PK:
+        source: FRED
+        series_id: MYAGM2PKM189N
+      CO:
+        source: FRED
+        series_id: MYAGM2COM189N
+      PE:
+        source: FRED
+        series_id: MYAGM2PEM189N
+      HU:
+        source: FRED
+        series_id: MYAGM2HUM189N
+      RO:
+        source: FRED
+        series_id: MYAGM2ROM189N
+      IL:
+        source: FRED
+        series_id: MYAGM2ILM189N
+      SA:
+        source: FRED
+        series_id: MYAGM2SAM189N
+      AE:
+        source: FRED
+        series_id: MYAGM2AEM189N
+      SG:
+        source: FRED
+        series_id: MYAGM2SGM189N
+      'NO':
+        source: FRED
+        series_id: MYAGM2NOM189N
+      SE:
+        source: FRED
+        series_id: MYAGM2SEM189N
+      DK:
+        source: FRED
+        series_id: MYAGM2DKM189N
+      NZ:
+        source: FRED
+        series_id: MYAGM2NZM189N
+      FI:
+        source: FRED
+        series_id: MYAGM2FIM189N
+      IE:
+        source: FRED
+        series_id: MYAGM2IEM189N
+      BE:
+        source: FRED
+        series_id: MYAGM2BEM189N
+  fx_reserves:
+    domain: Monetary & Debt
+    sdds_category: fx_reserves
+    transform: log_diff
+    sources:
+      CN:
+        source: FRED
+        series_id: TRESEGCNM052N
+      KR:
+        source: FRED
+        series_id: TRESEGKRM052N
+      JP:
+        source: FRED
+        series_id: TRESEGJPM052N
+      TR:
+        source: FRED
+        series_id: TRESEGTRM052N
+      RU:
+        source: FRED
+        series_id: TRESEGRUM052N
+      BR:
+        source: FRED
+        series_id: TRESEGBRM052N
+      AR:
+        source: FRED
+        series_id: TRESEGARM052N
+      ZA:
+        source: FRED
+        series_id: TRESEGZAM052N
+      US:
+        source: FRED
+        series_id: TRESEGUSM052N
+      GB:
+        source: FRED
+        series_id: TRESEGGBM052N
+      DE:
+        source: FRED
+        series_id: TRESEGDEM052N
+      FR:
+        source: FRED
+        series_id: TRESEGFRM052N
+      IT:
+        source: FRED
+        series_id: TRESEGITM052N
+      ES:
+        source: FRED
+        series_id: TRESEGESM052N
+      NL:
+        source: FRED
+        series_id: TRESEGNLM052N
+      CH:
+        source: FRED
+        series_id: TRESEGCHM052N
+      AU:
+        source: FRED
+        series_id: TRESEGAUM052N
+      CA:
+        source: FRED
+        series_id: TRESEGCAM052N
+      IN:
+        source: FRED
+        series_id: TRESEGINM052N
+      VN:
+        source: FRED
+        series_id: TRESEGVNM052N
+      ID:
+        source: FRED
+        series_id: TRESEGIDM052N
+      PL:
+        source: FRED
+        series_id: TRESEGPLM052N
+      CZ:
+        source: FRED
+        series_id: TRESEGCZM052N
+      MX:
+        source: FRED
+        series_id: TRESEGMXM052N
+      TH:
+        source: FRED
+        series_id: TRESEGTHM052N
+      MY:
+        source: FRED
+        series_id: TRESEGMYM052N
+      PH:
+        source: FRED
+        series_id: TRESEGPHM052N
+      CL:
+        source: FRED
+        series_id: TRESEGCLM052N
+      GR:
+        source: FRED
+        series_id: TRESEGGRM052N
+      PT:
+        source: FRED
+        series_id: TRESEGPTM052N
+      NG:
+        source: FRED
+        series_id: TRESEGNGM052N
+      EG:
+        source: FRED
+        series_id: TRESEGEGM052N
+      PK:
+        source: FRED
+        series_id: TRESEGPKM052N
+      CO:
+        source: FRED
+        series_id: TRESEGCOM052N
+      PE:
+        source: FRED
+        series_id: TRESEGPEM052N
+      HU:
+        source: FRED
+        series_id: TRESEGHUM052N
+      RO:
+        source: FRED
+        series_id: TRESEGROM052N
+      IL:
+        source: FRED
+        series_id: TRESEGILM052N
+      SA:
+        source: FRED
+        series_id: TRESEGSAM052N
+      AE:
+        source: FRED
+        series_id: TRESEGAEM052N
+      SG:
+        source: FRED
+        series_id: TRESEGSGM052N
+      'NO':
+        source: FRED
+        series_id: TRESEGNOM052N
+      SE:
+        source: FRED
+        series_id: TRESEGSEM052N
+      DK:
+        source: FRED
+        series_id: TRESEGDKM052N
+      NZ:
+        source: FRED
+        series_id: TRESEGNZM052N
+      FI:
+        source: FRED
+        series_id: TRESEGFIM052N
+      IE:
+        source: FRED
+        series_id: TRESEGIEM052N
+      BE:
+        source: FRED
+        series_id: TRESEGBEM052N
+  reer:
+    domain: Monetary & Debt
+    sdds_category: cpi
+    transform: log_diff
+    sources:
+      CN:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.CN.02
+      KR:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.KR.02
+      JP:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.JP.02
+      TR:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.TR.02
+      RU:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.RU.02
+      BR:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.BR.02
+      AR:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.AR.02
+      ZA:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.ZA.02
+      US:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.US.02
+      GB:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.GB.02
+      DE:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.DE.02
+      FR:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.FR.02
+      IT:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.IT.02
+      ES:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.ES.02
+      NL:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.NL.02
+      CH:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.CH.02
+      AU:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.AU.02
+      CA:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.CA.02
+      IN:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.IN.02
+      VN:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.VN.02
+      ID:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.ID.02
+      PL:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.PL.02
+      CZ:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.CZ.02
+      MX:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.MX.02
+      TH:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.TH.02
+      MY:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.MY.02
+      PH:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.PH.02
+      CL:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.CL.02
+      GR:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.GR.02
+      PT:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.PT.02
+      NG:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.NG.02
+      EG:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.EG.02
+      PK:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.PK.02
+      CO:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.CO.02
+      PE:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.PE.02
+      HU:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.HU.02
+      RO:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.RO.02
+      IL:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.IL.02
+      SA:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.SA.02
+      AE:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.AE.02
+      SG:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.SG.02
+      'NO':
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.NO.02
+      SE:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.SE.02
+      DK:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.DK.02
+      NZ:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.NZ.02
+      FI:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.FI.02
+      IE:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.IE.02
+      BE:
+        source: DBNOMICS
+        series_id: BIS/WS_EER/M.R.N.B.BE.02
+  10y_yield:
+    domain: Monetary & Debt
+    sdds_category: 10y_yield
+    transform: level
+    sources:
+      CN:
+        source: FRED
+        series_id: IRLTLT01CNM156N
+      KR:
+        source: FRED
+        series_id: IRLTLT01KRM156N
+      JP:
+        source: FRED
+        series_id: IRLTLT01JPM156N
+      TR:
+        source: FRED
+        series_id: IRLTLT01TRM156N
+      RU:
+        source: FRED
+        series_id: IRLTLT01RUM156N
+      BR:
+        source: FRED
+        series_id: IRLTLT01BRM156N
+      AR:
+        source: FRED
+        series_id: IRLTLT01ARM156N
+      ZA:
+        source: FRED
+        series_id: IRLTLT01ZAM156N
+      US:
+        source: FRED
+        series_id: IRLTLT01USM156N
+      GB:
+        source: FRED
+        series_id: IRLTLT01GBM156N
+      DE:
+        source: FRED
+        series_id: IRLTLT01DEM156N
+      FR:
+        source: FRED
+        series_id: IRLTLT01FRM156N
+      IT:
+        source: FRED
+        series_id: IRLTLT01ITM156N
+      ES:
+        source: FRED
+        series_id: IRLTLT01ESM156N
+      NL:
+        source: FRED
+        series_id: IRLTLT01NLM156N
+      CH:
+        source: FRED
+        series_id: IRLTLT01CHM156N
+      AU:
+        source: FRED
+        series_id: IRLTLT01AUM156N
+      CA:
+        source: FRED
+        series_id: IRLTLT01CAM156N
+      IN:
+        source: FRED
+        series_id: IRLTLT01INM156N
+      VN:
+        source: FRED
+        series_id: IRLTLT01VNM156N
+      ID:
+        source: FRED
+        series_id: IRLTLT01IDM156N
+      PL:
+        source: FRED
+        series_id: IRLTLT01PLM156N
+      CZ:
+        source: FRED
+        series_id: IRLTLT01CZM156N
+      MX:
+        source: FRED
+        series_id: IRLTLT01MXM156N
+      TH:
+        source: FRED
+        series_id: IRLTLT01THM156N
+      MY:
+        source: FRED
+        series_id: IRLTLT01MYM156N
+      PH:
+        source: FRED
+        series_id: IRLTLT01PHM156N
+      CL:
+        source: FRED
+        series_id: IRLTLT01CLM156N
+      GR:
+        source: FRED
+        series_id: IRLTLT01GRM156N
+      PT:
+        source: FRED
+        series_id: IRLTLT01PTM156N
+      NG:
+        source: FRED
+        series_id: IRLTLT01NGM156N
+      EG:
+        source: FRED
+        series_id: IRLTLT01EGM156N
+      PK:
+        source: FRED
+        series_id: IRLTLT01PKM156N
+      CO:
+        source: FRED
+        series_id: IRLTLT01COM156N
+      PE:
+        source: FRED
+        series_id: IRLTLT01PEM156N
+      HU:
+        source: FRED
+        series_id: IRLTLT01HUM156N
+      RO:
+        source: FRED
+        series_id: IRLTLT01ROM156N
+      IL:
+        source: FRED
+        series_id: IRLTLT01ILM156N
+      SA:
+        source: FRED
+        series_id: IRLTLT01SAM156N
+      AE:
+        source: FRED
+        series_id: IRLTLT01AEM156N
+      SG:
+        source: FRED
+        series_id: IRLTLT01SGM156N
+      'NO':
+        source: FRED
+        series_id: IRLTLT01NOM156N
+      SE:
+        source: FRED
+        series_id: IRLTLT01SEM156N
+      DK:
+        source: FRED
+        series_id: IRLTLT01DKM156N
+      NZ:
+        source: FRED
+        series_id: IRLTLT01NZM156N
+      FI:
+        source: FRED
+        series_id: IRLTLT01FIM156N
+      IE:
+        source: FRED
+        series_id: IRLTLT01IEM156N
+      BE:
+        source: FRED
+        series_id: IRLTLT01BEM156N
+  exports:
+    domain: External Order
+    sdds_category: trade_balance
+    transform: log_diff
+    sources:
+      CN:
+        source: FRED
+        series_id: XTEXVA01CNM667S
+      KR:
+        source: FRED
+        series_id: XTEXVA01KRM667S
+      JP:
+        source: FRED
+        series_id: XTEXVA01JPM667S
+      TR:
+        source: FRED
+        series_id: XTEXVA01TRM667S
+      RU:
+        source: FRED
+        series_id: XTEXVA01RUM667S
+      BR:
+        source: FRED
+        series_id: XTEXVA01BRM667S
+      AR:
+        source: FRED
+        series_id: XTEXVA01ARM667S
+      ZA:
+        source: FRED
+        series_id: XTEXVA01ZAM667S
+      US:
+        source: FRED
+        series_id: XTEXVA01USM667S
+      GB:
+        source: FRED
+        series_id: XTEXVA01GBM667S
+      DE:
+        source: FRED
+        series_id: XTEXVA01DEM667S
+      FR:
+        source: FRED
+        series_id: XTEXVA01FRM667S
+      IT:
+        source: FRED
+        series_id: XTEXVA01ITM667S
+      ES:
+        source: FRED
+        series_id: XTEXVA01ESM667S
+      NL:
+        source: FRED
+        series_id: XTEXVA01NLM667S
+      CH:
+        source: FRED
+        series_id: XTEXVA01CHM667S
+      AU:
+        source: FRED
+        series_id: XTEXVA01AUM667S
+      CA:
+        source: FRED
+        series_id: XTEXVA01CAM667S
+      IN:
+        source: FRED
+        series_id: XTEXVA01INM667S
+      VN:
+        source: FRED
+        series_id: XTEXVA01VNM667S
+      ID:
+        source: FRED
+        series_id: XTEXVA01IDM667S
+      PL:
+        source: FRED
+        series_id: XTEXVA01PLM667S
+      CZ:
+        source: FRED
+        series_id: XTEXVA01CZM667S
+      MX:
+        source: FRED
+        series_id: XTEXVA01MXM667S
+      TH:
+        source: FRED
+        series_id: XTEXVA01THM667S
+      MY:
+        source: FRED
+        series_id: XTEXVA01MYM667S
+      PH:
+        source: FRED
+        series_id: XTEXVA01PHM667S
+      CL:
+        source: FRED
+        series_id: XTEXVA01CLM667S
+      GR:
+        source: FRED
+        series_id: XTEXVA01GRM667S
+      PT:
+        source: FRED
+        series_id: XTEXVA01PTM667S
+      NG:
+        source: FRED
+        series_id: XTEXVA01NGM667S
+      EG:
+        source: FRED
+        series_id: XTEXVA01EGM667S
+      PK:
+        source: FRED
+        series_id: XTEXVA01PKM667S
+      CO:
+        source: FRED
+        series_id: XTEXVA01COM667S
+      PE:
+        source: FRED
+        series_id: XTEXVA01PEM667S
+      HU:
+        source: FRED
+        series_id: XTEXVA01HUM667S
+      RO:
+        source: FRED
+        series_id: XTEXVA01ROM667S
+      IL:
+        source: FRED
+        series_id: XTEXVA01ILM667S
+      SA:
+        source: FRED
+        series_id: XTEXVA01SAM667S
+      AE:
+        source: FRED
+        series_id: XTEXVA01AEM667S
+      SG:
+        source: FRED
+        series_id: XTEXVA01SGM667S
+      'NO':
+        source: FRED
+        series_id: XTEXVA01NOM667S
+      SE:
+        source: FRED
+        series_id: XTEXVA01SEM667S
+      DK:
+        source: FRED
+        series_id: XTEXVA01DKM667S
+      NZ:
+        source: FRED
+        series_id: XTEXVA01NZM667S
+      FI:
+        source: FRED
+        series_id: XTEXVA01FIM667S
+      IE:
+        source: FRED
+        series_id: XTEXVA01IEM667S
+      BE:
+        source: FRED
+        series_id: XTEXVA01BEM667S
+  imports:
+    domain: External Order
+    sdds_category: trade_balance
+    transform: log_diff
+    sources:
+      CN:
+        source: FRED
+        series_id: XTIMVA01CNM667S
+      KR:
+        source: FRED
+        series_id: XTIMVA01KRM667S
+      JP:
+        source: FRED
+        series_id: XTIMVA01JPM667S
+      TR:
+        source: FRED
+        series_id: XTIMVA01TRM667S
+      RU:
+        source: FRED
+        series_id: XTIMVA01RUM667S
+      BR:
+        source: FRED
+        series_id: XTIMVA01BRM667S
+      AR:
+        source: FRED
+        series_id: XTIMVA01ARM667S
+      ZA:
+        source: FRED
+        series_id: XTIMVA01ZAM667S
+      US:
+        source: FRED
+        series_id: XTIMVA01USM667S
+      GB:
+        source: FRED
+        series_id: XTIMVA01GBM667S
+      DE:
+        source: FRED
+        series_id: XTIMVA01DEM667S
+      FR:
+        source: FRED
+        series_id: XTIMVA01FRM667S
+      IT:
+        source: FRED
+        series_id: XTIMVA01ITM667S
+      ES:
+        source: FRED
+        series_id: XTIMVA01ESM667S
+      NL:
+        source: FRED
+        series_id: XTIMVA01NLM667S
+      CH:
+        source: FRED
+        series_id: XTIMVA01CHM667S
+      AU:
+        source: FRED
+        series_id: XTIMVA01AUM667S
+      CA:
+        source: FRED
+        series_id: XTIMVA01CAM667S
+      IN:
+        source: FRED
+        series_id: XTIMVA01INM667S
+      VN:
+        source: FRED
+        series_id: XTIMVA01VNM667S
+      ID:
+        source: FRED
+        series_id: XTIMVA01IDM667S
+      PL:
+        source: FRED
+        series_id: XTIMVA01PLM667S
+      CZ:
+        source: FRED
+        series_id: XTIMVA01CZM667S
+      MX:
+        source: FRED
+        series_id: XTIMVA01MXM667S
+      TH:
+        source: FRED
+        series_id: XTIMVA01THM667S
+      MY:
+        source: FRED
+        series_id: XTIMVA01MYM667S
+      PH:
+        source: FRED
+        series_id: XTIMVA01PHM667S
+      CL:
+        source: FRED
+        series_id: XTIMVA01CLM667S
+      GR:
+        source: FRED
+        series_id: XTIMVA01GRM667S
+      PT:
+        source: FRED
+        series_id: XTIMVA01PTM667S
+      NG:
+        source: FRED
+        series_id: XTIMVA01NGM667S
+      EG:
+        source: FRED
+        series_id: XTIMVA01EGM667S
+      PK:
+        source: FRED
+        series_id: XTIMVA01PKM667S
+      CO:
+        source: FRED
+        series_id: XTIMVA01COM667S
+      PE:
+        source: FRED
+        series_id: XTIMVA01PEM667S
+      HU:
+        source: FRED
+        series_id: XTIMVA01HUM667S
+      RO:
+        source: FRED
+        series_id: XTIMVA01ROM667S
+      IL:
+        source: FRED
+        series_id: XTIMVA01ILM667S
+      SA:
+        source: FRED
+        series_id: XTIMVA01SAM667S
+      AE:
+        source: FRED
+        series_id: XTIMVA01AEM667S
+      SG:
+        source: FRED
+        series_id: XTIMVA01SGM667S
+      'NO':
+        source: FRED
+        series_id: XTIMVA01NOM667S
+      SE:
+        source: FRED
+        series_id: XTIMVA01SEM667S
+      DK:
+        source: FRED
+        series_id: XTIMVA01DKM667S
+      NZ:
+        source: FRED
+        series_id: XTIMVA01NZM667S
+      FI:
+        source: FRED
+        series_id: XTIMVA01FIM667S
+      IE:
+        source: FRED
+        series_id: XTIMVA01IEM667S
+      BE:
+        source: FRED
+        series_id: XTIMVA01BEM667S
+  housing_price_index:
+    domain: Internal Order
+    sdds_category: housing
+    transform: log_diff
+    sources:
+      CN:
+        source: FRED
+        series_id: QCNR628BIS
+      KR:
+        source: FRED
+        series_id: QKRR628BIS
+      JP:
+        source: FRED
+        series_id: QJPR628BIS
+      TR:
+        source: FRED
+        series_id: QTRR628BIS
+      RU:
+        source: FRED
+        series_id: QRUR628BIS
+      BR:
+        source: FRED
+        series_id: QBRR628BIS
+      AR:
+        source: FRED
+        series_id: QARR628BIS
+      ZA:
+        source: FRED
+        series_id: QZAR628BIS
+      US:
+        source: FRED
+        series_id: QUSR628BIS
+      GB:
+        source: FRED
+        series_id: QGBR628BIS
+      DE:
+        source: FRED
+        series_id: QDER628BIS
+      FR:
+        source: FRED
+        series_id: QFRR628BIS
+      IT:
+        source: FRED
+        series_id: QITR628BIS
+      ES:
+        source: FRED
+        series_id: QESR628BIS
+      NL:
+        source: FRED
+        series_id: QNLR628BIS
+      CH:
+        source: FRED
+        series_id: QCHR628BIS
+      AU:
+        source: FRED
+        series_id: QAUR628BIS
+      CA:
+        source: FRED
+        series_id: QCAR628BIS
+      IN:
+        source: FRED
+        series_id: QINR628BIS
+      VN:
+        source: FRED
+        series_id: QVNR628BIS
+      ID:
+        source: FRED
+        series_id: QIDR628BIS
+      PL:
+        source: FRED
+        series_id: QPLR628BIS
+      CZ:
+        source: FRED
+        series_id: QCZR628BIS
+      MX:
+        source: FRED
+        series_id: QMXR628BIS
+      TH:
+        source: FRED
+        series_id: QTHR628BIS
+      MY:
+        source: FRED
+        series_id: QMYR628BIS
+      PH:
+        source: FRED
+        series_id: QPHR628BIS
+      CL:
+        source: FRED
+        series_id: QCLR628BIS
+      GR:
+        source: FRED
+        series_id: QGRR628BIS
+      PT:
+        source: FRED
+        series_id: QPTR628BIS
+      NG:
+        source: FRED
+        series_id: QNGR628BIS
+      EG:
+        source: FRED
+        series_id: QEGR628BIS
+      PK:
+        source: FRED
+        series_id: QPKR628BIS
+      CO:
+        source: FRED
+        series_id: QCOR628BIS
+      PE:
+        source: FRED
+        series_id: QPER628BIS
+      HU:
+        source: FRED
+        series_id: QHUR628BIS
+      RO:
+        source: FRED
+        series_id: QROR628BIS
+      IL:
+        source: FRED
+        series_id: QILR628BIS
+      SA:
+        source: FRED
+        series_id: QSAR628BIS
+      AE:
+        source: FRED
+        series_id: QAER628BIS
+      SG:
+        source: FRED
+        series_id: QSGR628BIS
+      'NO':
+        source: FRED
+        series_id: QNOR628BIS
+      SE:
+        source: FRED
+        series_id: QSER628BIS
+      DK:
+        source: FRED
+        series_id: QDKR628BIS
+      NZ:
+        source: FRED
+        series_id: QNZR628BIS
+      FI:
+        source: FRED
+        series_id: QFIR628BIS
+      IE:
+        source: FRED
+        series_id: QIER628BIS
+      BE:
+        source: FRED
+        series_id: QBER628BIS
+  stock_market_index:
+    domain: Monetary & Debt
+    sdds_category: stock_market
+    transform: log_diff
+    sources:
+      CN:
+        source: FRED
+        series_id: SPASTT01CNM661N
+      KR:
+        source: FRED
+        series_id: SPASTT01KRM661N
+      JP:
+        source: FRED
+        series_id: SPASTT01JPM661N
+      TR:
+        source: FRED
+        series_id: SPASTT01TRM661N
+      RU:
+        source: FRED
+        series_id: SPASTT01RUM661N
+      BR:
+        source: FRED
+        series_id: SPASTT01BRM661N
+      AR:
+        source: FRED
+        series_id: SPASTT01ARM661N
+      ZA:
+        source: FRED
+        series_id: SPASTT01ZAM661N
+      US:
+        source: FRED
+        series_id: SPASTT01USM661N
+      GB:
+        source: FRED
+        series_id: SPASTT01GBM661N
+      DE:
+        source: FRED
+        series_id: SPASTT01DEM661N
+      FR:
+        source: FRED
+        series_id: SPASTT01FRM661N
+      IT:
+        source: FRED
+        series_id: SPASTT01ITM661N
+      ES:
+        source: FRED
+        series_id: SPASTT01ESM661N
+      NL:
+        source: FRED
+        series_id: SPASTT01NLM661N
+      CH:
+        source: FRED
+        series_id: SPASTT01CHM661N
+      AU:
+        source: FRED
+        series_id: SPASTT01AUM661N
+      CA:
+        source: FRED
+        series_id: SPASTT01CAM661N
+      IN:
+        source: FRED
+        series_id: SPASTT01INM661N
+      VN:
+        source: FRED
+        series_id: SPASTT01VNM661N
+      ID:
+        source: FRED
+        series_id: SPASTT01IDM661N
+      PL:
+        source: FRED
+        series_id: SPASTT01PLM661N
+      CZ:
+        source: FRED
+        series_id: SPASTT01CZM661N
+      MX:
+        source: FRED
+        series_id: SPASTT01MXM661N
+      TH:
+        source: FRED
+        series_id: SPASTT01THM661N
+      MY:
+        source: FRED
+        series_id: SPASTT01MYM661N
+      PH:
+        source: FRED
+        series_id: SPASTT01PHM661N
+      CL:
+        source: FRED
+        series_id: SPASTT01CLM661N
+      GR:
+        source: FRED
+        series_id: SPASTT01GRM661N
+      PT:
+        source: FRED
+        series_id: SPASTT01PTM661N
+      NG:
+        source: FRED
+        series_id: SPASTT01NGM661N
+      EG:
+        source: FRED
+        series_id: SPASTT01EGM661N
+      PK:
+        source: FRED
+        series_id: SPASTT01PKM661N
+      CO:
+        source: FRED
+        series_id: SPASTT01COM661N
+      PE:
+        source: FRED
+        series_id: SPASTT01PEM661N
+      HU:
+        source: FRED
+        series_id: SPASTT01HUM661N
+      RO:
+        source: FRED
+        series_id: SPASTT01ROM661N
+      IL:
+        source: FRED
+        series_id: SPASTT01ILM661N
+      SA:
+        source: FRED
+        series_id: SPASTT01SAM661N
+      AE:
+        source: FRED
+        series_id: SPASTT01AEM661N
+      SG:
+        source: FRED
+        series_id: SPASTT01SGM661N
+      'NO':
+        source: FRED
+        series_id: SPASTT01NOM661N
+      SE:
+        source: FRED
+        series_id: SPASTT01SEM661N
+      DK:
+        source: FRED
+        series_id: SPASTT01DKM661N
+      NZ:
+        source: FRED
+        series_id: SPASTT01NZM661N
+      FI:
+        source: FRED
+        series_id: SPASTT01FIM661N
+      IE:
+        source: FRED
+        series_id: SPASTT01IEM661N
+      BE:
+        source: FRED
+        series_id: SPASTT01BEM661N
+  consumer_confidence:
+    domain: Internal Order
+    sdds_category: confidence
+    transform: level
+    sources:
+      CN:
+        source: FRED
+        series_id: CSCICP03CNM665S
+      KR:
+        source: FRED
+        series_id: CSCICP03KRM665S
+      JP:
+        source: FRED
+        series_id: CSCICP03JPM665S
+      TR:
+        source: FRED
+        series_id: CSCICP03TRM665S
+      RU:
+        source: FRED
+        series_id: CSCICP03RUM665S
+      BR:
+        source: FRED
+        series_id: CSCICP03BRM665S
+      AR:
+        source: FRED
+        series_id: CSCICP03ARM665S
+      ZA:
+        source: FRED
+        series_id: CSCICP03ZAM665S
+      US:
+        source: FRED
+        series_id: CSCICP03USM665S
+      GB:
+        source: FRED
+        series_id: CSCICP03GBM665S
+      DE:
+        source: FRED
+        series_id: CSCICP03DEM665S
+      FR:
+        source: FRED
+        series_id: CSCICP03FRM665S
+      IT:
+        source: FRED
+        series_id: CSCICP03ITM665S
+      ES:
+        source: FRED
+        series_id: CSCICP03ESM665S
+      NL:
+        source: FRED
+        series_id: CSCICP03NLM665S
+      CH:
+        source: FRED
+        series_id: CSCICP03CHM665S
+      AU:
+        source: FRED
+        series_id: CSCICP03AUM665S
+      CA:
+        source: FRED
+        series_id: CSCICP03CAM665S
+      IN:
+        source: FRED
+        series_id: CSCICP03INM665S
+      VN:
+        source: FRED
+        series_id: CSCICP03VNM665S
+      ID:
+        source: FRED
+        series_id: CSCICP03IDM665S
+      PL:
+        source: FRED
+        series_id: CSCICP03PLM665S
+      CZ:
+        source: FRED
+        series_id: CSCICP03CZM665S
+      MX:
+        source: FRED
+        series_id: CSCICP03MXM665S
+      TH:
+        source: FRED
+        series_id: CSCICP03THM665S
+      MY:
+        source: FRED
+        series_id: CSCICP03MYM665S
+      PH:
+        source: FRED
+        series_id: CSCICP03PHM665S
+      CL:
+        source: FRED
+        series_id: CSCICP03CLM665S
+      GR:
+        source: FRED
+        series_id: CSCICP03GRM665S
+      PT:
+        source: FRED
+        series_id: CSCICP03PTM665S
+      NG:
+        source: FRED
+        series_id: CSCICP03NGM665S
+      EG:
+        source: FRED
+        series_id: CSCICP03EGM665S
+      PK:
+        source: FRED
+        series_id: CSCICP03PKM665S
+      CO:
+        source: FRED
+        series_id: CSCICP03COM665S
+      PE:
+        source: FRED
+        series_id: CSCICP03PEM665S
+      HU:
+        source: FRED
+        series_id: CSCICP03HUM665S
+      RO:
+        source: FRED
+        series_id: CSCICP03ROM665S
+      IL:
+        source: FRED
+        series_id: CSCICP03ILM665S
+      SA:
+        source: FRED
+        series_id: CSCICP03SAM665S
+      AE:
+        source: FRED
+        series_id: CSCICP03AEM665S
+      SG:
+        source: FRED
+        series_id: CSCICP03SGM665S
+      'NO':
+        source: FRED
+        series_id: CSCICP03NOM665S
+      SE:
+        source: FRED
+        series_id: CSCICP03SEM665S
+      DK:
+        source: FRED
+        series_id: CSCICP03DKM665S
+      NZ:
+        source: FRED
+        series_id: CSCICP03NZM665S
+      FI:
+        source: FRED
+        series_id: CSCICP03FIM665S
+      IE:
+        source: FRED
+        series_id: CSCICP03IEM665S
+      BE:
+        source: FRED
+        series_id: CSCICP03BEM665S
