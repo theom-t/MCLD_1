@@ -1,0 +1,854 @@
+  Trial 277 | Epoch 090 | GP NLPD: 160635.55 | JEPA Loss:   0.62 | SR: 1.94
+  Trial 277 | Epoch 100 | GP NLPD: 160389.22 | JEPA Loss:   0.61 | SR: 1.95
+  Trial 277 | Epoch 110 | GP NLPD: 158684.22 | JEPA Loss:   0.61 | SR: 1.97
+  Trial 277 | Epoch 120 | GP NLPD: 159617.71 | JEPA Loss:   0.59 | SR: 2.00
+  Trial 277 | Epoch 130 | GP NLPD: 160155.06 | JEPA Loss:   0.59 | SR: 1.98
+  Trial 277 | Epoch 140 | GP NLPD: 160304.33 | JEPA Loss:   0.57 | SR: 2.01
+  Trial 277 | Epoch 150 | GP NLPD: 160939.74 | JEPA Loss:   0.57 | SR: 1.92
+  Trial 277 | Epoch 160 | GP NLPD: 161430.47 | JEPA Loss:   0.56 | SR: 2.01
+  Trial 277 | Epoch 170 | GP NLPD: 162452.68 | JEPA Loss:   0.57 | SR: 2.00
+  Trial 277 | Epoch 180 | GP NLPD: 163950.96 | JEPA Loss:   0.58 | SR: 1.99
+  Trial 277 | Epoch 190 | GP NLPD: 162895.59 | JEPA Loss:   0.60 | SR: 1.89
+  Trial 277 | Epoch 200 | GP NLPD: 163832.96 | JEPA Loss:   0.61 | SR: 1.91
+  Trial 277 | Epoch 210 | GP NLPD: 161767.03 | JEPA Loss:   0.61 | SR: 1.97
+  Trial 277 | Epoch 220 | GP NLPD: 161672.17 | JEPA Loss:   0.62 | SR: 1.94
+  Trial 277 | Epoch 230 | GP NLPD: 159055.31 | JEPA Loss:   0.64 | SR: 1.95
+  Trial 277 | Epoch 240 | GP NLPD: 159467.10 | JEPA Loss:   0.69 | SR: 1.87
+  Trial 277 | Epoch 250 | GP NLPD: 157400.00 | JEPA Loss:   0.70 | SR: 1.85
+  Trial 277 | Epoch 260 | GP NLPD: 156431.88 | JEPA Loss:   0.73 | SR: 1.75
+  Trial 277 | Epoch 270 | GP NLPD: 155533.74 | JEPA Loss:   0.76 | SR: 1.73
+  Trial 277 | Epoch 280 | GP NLPD: 155193.55 | JEPA Loss:   0.81 | SR: 1.63
+  Trial 277 | Epoch 290 | GP NLPD: 155271.99 | JEPA Loss:   0.81 | SR: 1.60
+  Trial 277 | Epoch 299 | GP NLPD: 153371.52 | JEPA Loss:   0.77 | SR: 1.67
+[I 2026-09-04 01:40:47,764] Trial 277 finished with values: [153294.29947916666, 0.7744255252182484, -1.5631144642829895] and parameters: {'encoder_layers': 3, 'encoder_hidden': 32, 'latent_dim': 5, 'gp_num_inducing': 128, 'gp_kernel': 'Matern12', 'gp_periodic': False, 'gp_composition': 'multiplicative', 'gp_mean': 'Constant', 'lr': 0.0019813680245228385, 'gp_lr': 0.002228851271591878, 'var_weight': 27.8191887647068, 'cov_weight': 27.571508099224296, 'topo_weight': 2.804988248611534, 'ema_tau': 0.9917082375834424, 'aug_noise': 0.10059698345924838, 'aug_dropout': 0.15342346279266736}.
+  Trial 278: JIT compilation took 0.0s
+  Trial 278 | Epoch 000 | GP NLPD: 230430.91 | JEPA Loss:   0.75 | SR: 2.62
+  Trial 278 | Epoch 010 | GP NLPD: 244869.67 | JEPA Loss:   0.53 | SR: 3.76
+  Trial 278 | Epoch 020 | GP NLPD: 251579.25 | JEPA Loss:   0.66 | SR: 3.60
+  Trial 278 | Epoch 030 | GP NLPD: 253512.50 | JEPA Loss:   0.98 | SR: 3.02
+  Trial 278 | Epoch 040 | GP NLPD: 255202.64 | JEPA Loss:   1.13 | SR: 2.67
+  Trial 278 | Epoch 050 | GP NLPD: 256380.40 | JEPA Loss:   1.20 | SR: 2.49
+  Trial 278 | Epoch 060 | GP NLPD: 257247.95 | JEPA Loss:   1.32 | SR: 2.40
+  Trial 278 | Epoch 070 | GP NLPD: 258119.61 | JEPA Loss:   1.35 | SR: 2.36
+  Trial 278 | Epoch 080 | GP NLPD: 259226.41 | JEPA Loss:   1.25 | SR: 2.34
+  Trial 278 | Epoch 090 | GP NLPD: 260355.96 | JEPA Loss:   1.35 | SR: 2.35
+  Trial 278 | Epoch 100 | GP NLPD: 261982.86 | JEPA Loss:   1.33 | SR: 2.33
+  Trial 278 | Epoch 110 | GP NLPD: 263514.12 | JEPA Loss:   1.35 | SR: 2.32
+  Trial 278 | Epoch 120 | GP NLPD: 264311.82 | JEPA Loss:   1.32 | SR: 2.28
+  Trial 278 | Epoch 130 | GP NLPD: 265661.91 | JEPA Loss:   1.32 | SR: 2.31
+  Trial 278 | Epoch 140 | GP NLPD: 267154.85 | JEPA Loss:   1.26 | SR: 2.25
+  Trial 278 | Epoch 150 | GP NLPD: 268777.98 | JEPA Loss:   1.22 | SR: 2.23
+  Trial 278 | Epoch 160 | GP NLPD: 269911.40 | JEPA Loss:   1.26 | SR: 2.17
+  Trial 278 | Epoch 170 | GP NLPD: 271539.04 | JEPA Loss:   1.20 | SR: 2.13
+  Trial 278 | Epoch 180 | GP NLPD: 273614.09 | JEPA Loss:   1.16 | SR: 2.10
+  Trial 278 | Epoch 190 | GP NLPD: 275181.94 | JEPA Loss:   1.23 | SR: 2.08
+  Trial 278 | Epoch 200 | GP NLPD: 275172.57 | JEPA Loss:   1.19 | SR: 2.02
+  Trial 278 | Epoch 210 | GP NLPD: 276091.45 | JEPA Loss:   1.14 | SR: 1.98
+  Trial 278 | Epoch 220 | GP NLPD: 277160.53 | JEPA Loss:   1.19 | SR: 1.90
+  Trial 278 | Epoch 230 | GP NLPD: 278124.41 | JEPA Loss:   1.16 | SR: 1.88
+  Trial 278 | Epoch 240 | GP NLPD: 279131.74 | JEPA Loss:   1.13 | SR: 1.84
+  Trial 278 | Epoch 250 | GP NLPD: 278502.14 | JEPA Loss:   1.17 | SR: 1.78
+  Trial 278 | Epoch 260 | GP NLPD: 279007.06 | JEPA Loss:   1.18 | SR: 1.75
+  Trial 278 | Epoch 270 | GP NLPD: 279593.30 | JEPA Loss:   1.16 | SR: 1.72
+  Trial 278 | Epoch 280 | GP NLPD: 280316.58 | JEPA Loss:   1.24 | SR: 1.67
+  Trial 278 | Epoch 290 | GP NLPD: 280876.60 | JEPA Loss:   1.23 | SR: 1.63
+  Trial 278 | Epoch 299 | GP NLPD: 281812.43 | JEPA Loss:   1.22 | SR: 1.63
+[I 2026-09-04 01:41:34,099] Trial 278 finished with values: [253512.5, 0.9809593694905441, -3.0153249899546304] and parameters: {'encoder_layers': 3, 'encoder_hidden': 32, 'latent_dim': 8, 'gp_num_inducing': 256, 'gp_kernel': 'Matern32', 'gp_periodic': False, 'gp_composition': 'additive', 'gp_mean': 'Constant', 'lr': 0.00016840094149922307, 'gp_lr': 0.0013280937386229983, 'var_weight': 34.701261870469516, 'cov_weight': 40.536142928426436, 'topo_weight': 4.629866469735148, 'ema_tau': 0.9939849744560338, 'aug_noise': 0.003053042833115383, 'aug_dropout': 0.08333322854493784}.
+  Trial 279: JIT compilation took 0.0s
+  Trial 279 | Epoch 000 | GP NLPD: 153465.35 | JEPA Loss:   0.61 | SR: 2.03
+  Trial 279 | Epoch 010 | GP NLPD: 197469.43 | JEPA Loss:   0.67 | SR: 2.13
+  Trial 279 | Epoch 020 | GP NLPD: 179587.78 | JEPA Loss:   0.69 | SR: 1.76
+  Trial 279 | Epoch 030 | GP NLPD: 166305.88 | JEPA Loss:   0.69 | SR: 1.65
+  Trial 279 | Epoch 040 | GP NLPD: 154089.26 | JEPA Loss:   0.67 | SR: 1.75
+  Trial 279 | Epoch 050 | GP NLPD: 139715.27 | JEPA Loss:   0.64 | SR: 1.71
+  Trial 279 | Epoch 060 | GP NLPD: 124351.75 | JEPA Loss:   0.78 | SR: 1.52
+  Trial 279 | Epoch 070 | GP NLPD: 122890.47 | JEPA Loss:   0.80 | SR: 1.45
+  Trial 279 | Epoch 080 | GP NLPD: 123281.39 | JEPA Loss:   0.85 | SR: 1.50
+  Trial 279 | Epoch 090 | GP NLPD: 121706.91 | JEPA Loss:   0.80 | SR: 1.55
+  Trial 279 | Epoch 100 | GP NLPD: 121646.70 | JEPA Loss:   0.80 | SR: 1.55
+  Trial 279 | Epoch 110 | GP NLPD: 120049.90 | JEPA Loss:   0.76 | SR: 1.57
+  Trial 279 | Epoch 120 | GP NLPD: 119655.62 | JEPA Loss:   0.77 | SR: 1.60
+  Trial 279 | Epoch 130 | GP NLPD: 118579.41 | JEPA Loss:   0.79 | SR: 1.68
+  Trial 279 | Epoch 140 | GP NLPD: 116785.30 | JEPA Loss:   0.74 | SR: 1.72
+  Trial 279 | Epoch 150 | GP NLPD: 117473.31 | JEPA Loss:   0.74 | SR: 1.72
+  Trial 279 | Epoch 160 | GP NLPD: 117539.24 | JEPA Loss:   0.75 | SR: 1.66
+  Trial 279 | Epoch 170 | GP NLPD: 117288.36 | JEPA Loss:   0.72 | SR: 1.72
+  Trial 279 | Epoch 180 | GP NLPD: 118351.34 | JEPA Loss:   0.70 | SR: 1.82
+  Trial 279 | Epoch 190 | GP NLPD: 117321.32 | JEPA Loss:   0.70 | SR: 1.76
+  Trial 279 | Epoch 200 | GP NLPD: 118093.78 | JEPA Loss:   0.70 | SR: 1.75
+  Trial 279 | Epoch 210 | GP NLPD: 119382.04 | JEPA Loss:   0.67 | SR: 1.79
+  Trial 279 | Epoch 220 | GP NLPD: 119409.28 | JEPA Loss:   0.66 | SR: 1.80
+  Trial 279 | Epoch 230 | GP NLPD: 121062.38 | JEPA Loss:   0.70 | SR: 1.76
+  Trial 279 | Epoch 240 | GP NLPD: 120253.43 | JEPA Loss:   0.67 | SR: 1.75
+  Trial 279 | Epoch 250 | GP NLPD: 122383.09 | JEPA Loss:   0.65 | SR: 1.79
+  Trial 279 | Epoch 260 | GP NLPD: 123041.23 | JEPA Loss:   0.65 | SR: 1.76
+  Trial 279 | Epoch 270 | GP NLPD: 124562.15 | JEPA Loss:   0.64 | SR: 1.77
+  Trial 279 | Epoch 280 | GP NLPD: 126199.24 | JEPA Loss:   0.64 | SR: 1.80
+  Trial 279 | Epoch 290 | GP NLPD: 125840.78 | JEPA Loss:   0.64 | SR: 1.76
+  Trial 279 | Epoch 299 | GP NLPD: 125962.76 | JEPA Loss:   0.65 | SR: 1.79
+[I 2026-09-04 01:42:25,274] Trial 279 finished with values: [115211.80729166667, 0.7302738204598427, -1.7086663842201233] and parameters: {'encoder_layers': 2, 'encoder_hidden': 64, 'latent_dim': 4, 'gp_num_inducing': 512, 'gp_kernel': 'RBF', 'gp_periodic': False, 'gp_composition': 'multiplicative', 'gp_mean': 'Constant', 'lr': 0.0008681408145019698, 'gp_lr': 0.015958729947080228, 'var_weight': 45.83676974462478, 'cov_weight': 45.197479452435736, 'topo_weight': 2.804988248611534, 'ema_tau': 0.9905951340409401, 'aug_noise': 0.11949200015840532, 'aug_dropout': 0.2807929211166537}.
+  Trial 280: JIT compilation took 0.0s
+  Trial 280 | Epoch 000 | GP NLPD: 259711.30 | JEPA Loss:   0.72 | SR: 3.14
+  Trial 280 | Epoch 010 | GP NLPD: 293626.77 | JEPA Loss:   0.58 | SR: 3.58
+  Trial 280 | Epoch 020 | GP NLPD: 287026.45 | JEPA Loss:   0.68 | SR: 3.06
+  Trial 280 | Epoch 030 | GP NLPD: 278335.32 | JEPA Loss:   0.75 | SR: 2.83
+  Trial 280 | Epoch 040 | GP NLPD: 275434.90 | JEPA Loss:   0.76 | SR: 2.68
+  Trial 280 | Epoch 050 | GP NLPD: 271169.11 | JEPA Loss:   0.76 | SR: 2.63
+  Trial 280 | Epoch 060 | GP NLPD: 267250.15 | JEPA Loss:   0.77 | SR: 2.59
+  Trial 280 | Epoch 070 | GP NLPD: 264735.71 | JEPA Loss:   0.78 | SR: 2.55
+  Trial 280 | Epoch 080 | GP NLPD: 263948.81 | JEPA Loss:   0.79 | SR: 2.55
+  Trial 280 | Epoch 090 | GP NLPD: 263476.30 | JEPA Loss:   0.80 | SR: 2.53
+  Trial 280 | Epoch 100 | GP NLPD: 263858.42 | JEPA Loss:   0.80 | SR: 2.52
+  Trial 280 | Epoch 110 | GP NLPD: 263595.33 | JEPA Loss:   0.80 | SR: 2.50
+  Trial 280 | Epoch 120 | GP NLPD: 263516.45 | JEPA Loss:   0.81 | SR: 2.50
+  Trial 280 | Epoch 130 | GP NLPD: 263696.71 | JEPA Loss:   0.82 | SR: 2.52
+  Trial 280 | Epoch 140 | GP NLPD: 263988.06 | JEPA Loss:   0.81 | SR: 2.52
+  Trial 280 | Epoch 150 | GP NLPD: 263900.69 | JEPA Loss:   0.81 | SR: 2.54
+  Trial 280 | Epoch 160 | GP NLPD: 264726.80 | JEPA Loss:   0.81 | SR: 2.56
+  Trial 280 | Epoch 170 | GP NLPD: 265582.40 | JEPA Loss:   0.81 | SR: 2.60
+  Trial 280 | Epoch 180 | GP NLPD: 266336.42 | JEPA Loss:   0.82 | SR: 2.59
+  Trial 280 | Epoch 190 | GP NLPD: 267399.68 | JEPA Loss:   0.79 | SR: 2.66
+  Trial 280 | Epoch 200 | GP NLPD: 268283.32 | JEPA Loss:   0.79 | SR: 2.66
+  Trial 280 | Epoch 210 | GP NLPD: 269877.96 | JEPA Loss:   0.80 | SR: 2.70
+  Trial 280 | Epoch 220 | GP NLPD: 271099.78 | JEPA Loss:   0.78 | SR: 2.72
+  Trial 280 | Epoch 230 | GP NLPD: 273016.31 | JEPA Loss:   0.78 | SR: 2.73
+  Trial 280 | Epoch 240 | GP NLPD: 274135.90 | JEPA Loss:   0.77 | SR: 2.75
+  Trial 280 | Epoch 250 | GP NLPD: 274894.84 | JEPA Loss:   0.78 | SR: 2.75
+  Trial 280 | Epoch 260 | GP NLPD: 276298.64 | JEPA Loss:   0.78 | SR: 2.73
+  Trial 280 | Epoch 270 | GP NLPD: 277567.38 | JEPA Loss:   0.78 | SR: 2.75
+  Trial 280 | Epoch 280 | GP NLPD: 278844.05 | JEPA Loss:   0.78 | SR: 2.77
+  Trial 280 | Epoch 290 | GP NLPD: 279670.58 | JEPA Loss:   0.79 | SR: 2.74
+  Trial 280 | Epoch 299 | GP NLPD: 280103.82 | JEPA Loss:   0.79 | SR: 2.72
+[I 2026-09-04 01:43:19,674] Trial 280 finished with values: [263320.6171875, 0.8088475801050663, -2.5134658018747964] and parameters: {'encoder_layers': 2, 'encoder_hidden': 32, 'latent_dim': 9, 'gp_num_inducing': 512, 'gp_kernel': 'RBF', 'gp_periodic': True, 'gp_composition': 'additive', 'gp_mean': 'Zero', 'lr': 0.0002166595521301043, 'gp_lr': 0.0013280937386229983, 'var_weight': 22.86628996503969, 'cov_weight': 44.334893952817794, 'topo_weight': 4.629866469735148, 'ema_tau': 0.9917082375834424, 'aug_noise': 0.09508627802450437, 'aug_dropout': 0.16803956709965245}.
+  Trial 281: JIT compilation took 0.0s
+  Trial 281 | Epoch 000 | GP NLPD: 284941.49 | JEPA Loss:   0.78 | SR: 2.42
+  Trial 281 | Epoch 010 | GP NLPD: 319943.78 | JEPA Loss:   0.66 | SR: 3.74
+  Trial 281 | Epoch 020 | GP NLPD: 322045.08 | JEPA Loss:   0.67 | SR: 3.69
+  Trial 281 | Epoch 030 | GP NLPD: 322212.99 | JEPA Loss:   0.67 | SR: 3.60
+  Trial 281 | Epoch 040 | GP NLPD: 322374.66 | JEPA Loss:   0.72 | SR: 3.42
+  Trial 281 | Epoch 050 | GP NLPD: 321885.93 | JEPA Loss:   0.77 | SR: 3.10
+  Trial 281 | Epoch 060 | GP NLPD: 318495.63 | JEPA Loss:   0.80 | SR: 2.90
+  Trial 281 | Epoch 070 | GP NLPD: 315316.94 | JEPA Loss:   0.82 | SR: 2.76
+  Trial 281 | Epoch 080 | GP NLPD: 313236.25 | JEPA Loss:   0.81 | SR: 2.73
+  Trial 281 | Epoch 090 | GP NLPD: 311836.10 | JEPA Loss:   0.82 | SR: 2.68
+  Trial 281 | Epoch 100 | GP NLPD: 311268.39 | JEPA Loss:   0.82 | SR: 2.67
+  Trial 281 | Epoch 110 | GP NLPD: 311859.38 | JEPA Loss:   0.82 | SR: 2.63
+  Trial 281 | Epoch 120 | GP NLPD: 312611.06 | JEPA Loss:   0.82 | SR: 2.64
+  Trial 281 | Epoch 130 | GP NLPD: 314451.82 | JEPA Loss:   0.82 | SR: 2.64
+  Trial 281 | Epoch 140 | GP NLPD: 315995.06 | JEPA Loss:   0.82 | SR: 2.64
+  Trial 281 | Epoch 150 | GP NLPD: 316192.78 | JEPA Loss:   0.82 | SR: 2.68
+  Trial 281 | Epoch 160 | GP NLPD: 317282.53 | JEPA Loss:   0.82 | SR: 2.68
+  Trial 281 | Epoch 170 | GP NLPD: 318377.70 | JEPA Loss:   0.82 | SR: 2.69
+  Trial 281 | Epoch 180 | GP NLPD: 319457.46 | JEPA Loss:   0.82 | SR: 2.69
+  Trial 281 | Epoch 190 | GP NLPD: 320229.99 | JEPA Loss:   0.81 | SR: 2.69
+  Trial 281 | Epoch 200 | GP NLPD: 321360.99 | JEPA Loss:   0.82 | SR: 2.67
+  Trial 281 | Epoch 210 | GP NLPD: 322150.19 | JEPA Loss:   0.81 | SR: 2.67
+  Trial 281 | Epoch 220 | GP NLPD: 322905.67 | JEPA Loss:   0.82 | SR: 2.65
+  Trial 281 | Epoch 230 | GP NLPD: 323061.08 | JEPA Loss:   0.81 | SR: 2.68
+  Trial 281 | Epoch 240 | GP NLPD: 323566.53 | JEPA Loss:   0.82 | SR: 2.67
+  Trial 281 | Epoch 250 | GP NLPD: 323924.45 | JEPA Loss:   0.81 | SR: 2.69
+  Trial 281 | Epoch 260 | GP NLPD: 324131.16 | JEPA Loss:   0.81 | SR: 2.69
+  Trial 281 | Epoch 270 | GP NLPD: 324462.99 | JEPA Loss:   0.82 | SR: 2.68
+  Trial 281 | Epoch 280 | GP NLPD: 324851.95 | JEPA Loss:   0.82 | SR: 2.66
+  Trial 281 | Epoch 290 | GP NLPD: 325187.10 | JEPA Loss:   0.82 | SR: 2.66
+  Trial 281 | Epoch 299 | GP NLPD: 325519.52 | JEPA Loss:   0.82 | SR: 2.63
+[I 2026-09-04 01:43:57,305] Trial 281 finished with values: [311268.390625, 0.8224126485486825, -2.6706532637278237] and parameters: {'encoder_layers': 2, 'encoder_hidden': 32, 'latent_dim': 10, 'gp_num_inducing': 128, 'gp_kernel': 'Matern12', 'gp_periodic': False, 'gp_composition': 'additive', 'gp_mean': 'Zero', 'lr': 0.0002166595521301043, 'gp_lr': 0.002228851271591878, 'var_weight': 27.8191887647068, 'cov_weight': 45.197479452435736, 'topo_weight': 2.804988248611534, 'ema_tau': 0.9917082375834424, 'aug_noise': 0.15304983261181604, 'aug_dropout': 0.15342346279266736}.
+  Trial 282: JIT compilation took 0.0s
+  Trial 282 | Epoch 000 | GP NLPD: 109461.67 | JEPA Loss:   0.61 | SR: 2.15
+  Trial 282 | Epoch 010 | GP NLPD: 115477.91 | JEPA Loss:   0.71 | SR: 1.90
+  Trial 282 | Epoch 020 | GP NLPD: 141499.99 | JEPA Loss:   0.81 | SR: 1.66
+  Trial 282 | Epoch 030 | GP NLPD: 148302.23 | JEPA Loss:   0.92 | SR: 1.56
+  Trial 282 | Epoch 040 | GP NLPD: 148937.96 | JEPA Loss:   1.01 | SR: 1.49
+  Trial 282 | Epoch 050 | GP NLPD: 146385.71 | JEPA Loss:   1.10 | SR: 1.47
+  Trial 282 | Epoch 060 | GP NLPD: 141392.07 | JEPA Loss:   1.09 | SR: 1.46
+  Trial 282 | Epoch 070 | GP NLPD: 134732.73 | JEPA Loss:   1.03 | SR: 1.50
+  Trial 282 | Epoch 080 | GP NLPD: 127028.78 | JEPA Loss:   0.90 | SR: 1.52
+  Trial 282 | Epoch 090 | GP NLPD: 120825.31 | JEPA Loss:   0.84 | SR: 1.51
+  Trial 282 | Epoch 100 | GP NLPD: 118375.00 | JEPA Loss:   0.81 | SR: 1.51
+  Trial 282 | Epoch 110 | GP NLPD: 118302.28 | JEPA Loss:   0.77 | SR: 1.55
+  Trial 282 | Epoch 120 | GP NLPD: 119355.33 | JEPA Loss:   0.76 | SR: 1.56
+  Trial 282 | Epoch 130 | GP NLPD: 120571.75 | JEPA Loss:   0.73 | SR: 1.63
+  Trial 282 | Epoch 140 | GP NLPD: 121680.54 | JEPA Loss:   0.73 | SR: 1.64
+  Trial 282 | Epoch 150 | GP NLPD: 123177.19 | JEPA Loss:   0.72 | SR: 1.67
+  Trial 282 | Epoch 160 | GP NLPD: 125043.60 | JEPA Loss:   0.71 | SR: 1.71
+  Trial 282 | Epoch 170 | GP NLPD: 127014.28 | JEPA Loss:   0.70 | SR: 1.75
+  Trial 282 | Epoch 180 | GP NLPD: 129070.91 | JEPA Loss:   0.70 | SR: 1.74
+  Trial 282 | Epoch 190 | GP NLPD: 130919.11 | JEPA Loss:   0.69 | SR: 1.78
+  Trial 282 | Epoch 200 | GP NLPD: 132454.32 | JEPA Loss:   0.68 | SR: 1.81
+  Trial 282 | Epoch 210 | GP NLPD: 134179.30 | JEPA Loss:   0.67 | SR: 1.85
+  Trial 282 | Epoch 220 | GP NLPD: 135647.23 | JEPA Loss:   0.67 | SR: 1.85
+  Trial 282 | Epoch 230 | GP NLPD: 137554.82 | JEPA Loss:   0.65 | SR: 1.95
+  Trial 282 | Epoch 240 | GP NLPD: 139768.20 | JEPA Loss:   0.64 | SR: 2.01
+  Trial 282 | Epoch 250 | GP NLPD: 141565.12 | JEPA Loss:   0.62 | SR: 2.02
+  Trial 282 | Epoch 260 | GP NLPD: 142735.51 | JEPA Loss:   0.62 | SR: 2.05
+  Trial 282 | Epoch 270 | GP NLPD: 144442.52 | JEPA Loss:   0.61 | SR: 2.06
+  Trial 282 | Epoch 280 | GP NLPD: 145671.56 | JEPA Loss:   0.61 | SR: 2.05
+  Trial 282 | Epoch 290 | GP NLPD: 148335.77 | JEPA Loss:   0.62 | SR: 2.00
+  Trial 282 | Epoch 299 | GP NLPD: 150607.32 | JEPA Loss:   0.63 | SR: 1.98
+[I 2026-09-04 01:44:42,217] Trial 282 finished with values: [117953.20703125, 0.7952676638960838, -1.5324615041414897] and parameters: {'encoder_layers': 3, 'encoder_hidden': 32, 'latent_dim': 4, 'gp_num_inducing': 256, 'gp_kernel': 'RBF', 'gp_periodic': False, 'gp_composition': 'multiplicative', 'gp_mean': 'Constant', 'lr': 0.00030287453488654767, 'gp_lr': 0.043110414524021444, 'var_weight': 22.86628996503969, 'cov_weight': 36.32427556011761, 'topo_weight': 4.498129400339861, 'ema_tau': 0.997626792078338, 'aug_noise': 0.026102268557593213, 'aug_dropout': 0.386771114930245}.
+  Trial 283: JIT compilation took 0.0s
+  Trial 283 | Epoch 000 | GP NLPD:  94892.35 | JEPA Loss:   0.53 | SR: 2.22
+  Trial 283 | Epoch 010 | GP NLPD: 131790.32 | JEPA Loss:   0.60 | SR: 1.84
+  Trial 283 | Epoch 020 | GP NLPD: 149818.20 | JEPA Loss:   1.19 | SR: 1.35
+  Trial 283 | Epoch 030 | GP NLPD: 157350.09 | JEPA Loss:   1.11 | SR: 1.38
+  Trial 283 | Epoch 040 | GP NLPD: 157891.54 | JEPA Loss:   1.07 | SR: 1.42
+  Trial 283 | Epoch 050 | GP NLPD: 157826.43 | JEPA Loss:   1.05 | SR: 1.53
+  Trial 283 | Epoch 060 | GP NLPD: 156119.82 | JEPA Loss:   1.01 | SR: 1.59
+  Trial 283 | Epoch 070 | GP NLPD: 157000.82 | JEPA Loss:   1.01 | SR: 1.61
+  Trial 283 | Epoch 080 | GP NLPD: 153503.58 | JEPA Loss:   0.93 | SR: 1.58
+  Trial 283 | Epoch 090 | GP NLPD: 151419.34 | JEPA Loss:   0.86 | SR: 1.55
+  Trial 283 | Epoch 100 | GP NLPD: 145506.80 | JEPA Loss:   0.77 | SR: 1.55
+  Trial 283 | Epoch 110 | GP NLPD: 138587.56 | JEPA Loss:   0.73 | SR: 1.52
+  Trial 283 | Epoch 120 | GP NLPD: 130004.90 | JEPA Loss:   0.73 | SR: 1.49
+  Trial 283 | Epoch 130 | GP NLPD: 126053.32 | JEPA Loss:   0.71 | SR: 1.49
+  Trial 283 | Epoch 140 | GP NLPD: 125814.95 | JEPA Loss:   0.74 | SR: 1.45
+  Trial 283 | Epoch 150 | GP NLPD: 131128.85 | JEPA Loss:   0.74 | SR: 1.42
+  Trial 283 | Epoch 160 | GP NLPD: 132765.26 | JEPA Loss:   0.72 | SR: 1.44
+  Trial 283 | Epoch 170 | GP NLPD: 134153.41 | JEPA Loss:   0.71 | SR: 1.45
+  Trial 283 | Epoch 180 | GP NLPD: 137620.99 | JEPA Loss:   0.70 | SR: 1.47
+  Trial 283 | Epoch 190 | GP NLPD: 137661.51 | JEPA Loss:   0.70 | SR: 1.50
+  Trial 283 | Epoch 200 | GP NLPD: 135950.19 | JEPA Loss:   0.68 | SR: 1.54
+  Trial 283 | Epoch 210 | GP NLPD: 140731.89 | JEPA Loss:   0.72 | SR: 1.56
+  Trial 283 | Epoch 220 | GP NLPD: 142552.62 | JEPA Loss:   0.69 | SR: 1.59
+  Trial 283 | Epoch 230 | GP NLPD: 143028.45 | JEPA Loss:   0.68 | SR: 1.63
+  Trial 283 | Epoch 240 | GP NLPD: 144941.77 | JEPA Loss:   0.67 | SR: 1.66
+  Trial 283 | Epoch 250 | GP NLPD: 146465.85 | JEPA Loss:   0.67 | SR: 1.66
+  Trial 283 | Epoch 260 | GP NLPD: 143114.42 | JEPA Loss:   0.66 | SR: 1.74
+  Trial 283 | Epoch 270 | GP NLPD: 144236.58 | JEPA Loss:   0.70 | SR: 1.69
+  Trial 283 | Epoch 280 | GP NLPD: 143551.14 | JEPA Loss:   0.66 | SR: 1.76
+  Trial 283 | Epoch 290 | GP NLPD: 141650.61 | JEPA Loss:   0.72 | SR: 1.80
+  Trial 283 | Epoch 299 | GP NLPD: 143590.68 | JEPA Loss:   0.68 | SR: 1.80
+[I 2026-09-04 01:45:39,836] Trial 283 finished with values: [124612.77473958333, 0.7205016687512398, -1.4475629925727844] and parameters: {'encoder_layers': 3, 'encoder_hidden': 64, 'latent_dim': 4, 'gp_num_inducing': 512, 'gp_kernel': 'Matern52', 'gp_periodic': True, 'gp_composition': 'multiplicative', 'gp_mean': 'Constant', 'lr': 0.0005179446308753268, 'gp_lr': 0.015958729947080228, 'var_weight': 45.83676974462478, 'cov_weight': 14.68500796888831, 'topo_weight': 4.028345317916497, 'ema_tau': 0.9905951340409401, 'aug_noise': 0.10059698345924838, 'aug_dropout': 0.2807929211166537}.
+  Trial 284: JIT compilation took 0.0s
+  Trial 284 | Epoch 000 | GP NLPD: 183403.39 | JEPA Loss:   0.74 | SR: 2.95
+  Trial 284 | Epoch 010 | GP NLPD: 223491.93 | JEPA Loss:   0.74 | SR: 2.57
+  Trial 284 | Epoch 020 | GP NLPD: 240358.14 | JEPA Loss:   0.75 | SR: 2.36
+  Trial 284 | Epoch 030 | GP NLPD: 242316.64 | JEPA Loss:   0.75 | SR: 2.31
+  Trial 284 | Epoch 040 | GP NLPD: 242560.11 | JEPA Loss:   0.80 | SR: 2.08
+  Trial 284 | Epoch 050 | GP NLPD: 243049.98 | JEPA Loss:   0.82 | SR: 2.07
+  Trial 284 | Epoch 060 | GP NLPD: 243285.13 | JEPA Loss:   0.83 | SR: 2.08
+  Trial 284 | Epoch 070 | GP NLPD: 244473.47 | JEPA Loss:   0.86 | SR: 2.01
+  Trial 284 | Epoch 080 | GP NLPD: 245332.08 | JEPA Loss:   0.83 | SR: 2.04
+  Trial 284 | Epoch 090 | GP NLPD: 246895.98 | JEPA Loss:   0.83 | SR: 2.06
+  Trial 284 | Epoch 100 | GP NLPD: 247606.24 | JEPA Loss:   0.84 | SR: 2.02
+  Trial 284 | Epoch 110 | GP NLPD: 248351.06 | JEPA Loss:   0.89 | SR: 2.02
+  Trial 284 | Epoch 120 | GP NLPD: 249684.59 | JEPA Loss:   0.92 | SR: 1.96
+  Trial 284 | Epoch 130 | GP NLPD: 249763.63 | JEPA Loss:   0.90 | SR: 1.95
+  Trial 284 | Epoch 140 | GP NLPD: 250054.37 | JEPA Loss:   0.93 | SR: 1.92
+  Trial 284 | Epoch 150 | GP NLPD: 249866.36 | JEPA Loss:   0.95 | SR: 1.89
+  Trial 284 | Epoch 160 | GP NLPD: 250785.85 | JEPA Loss:   0.95 | SR: 1.88
+  Trial 284 | Epoch 170 | GP NLPD: 250134.16 | JEPA Loss:   0.92 | SR: 1.91
+  Trial 284 | Epoch 180 | GP NLPD: 250730.41 | JEPA Loss:   0.96 | SR: 1.86
+  Trial 284 | Epoch 190 | GP NLPD: 250148.05 | JEPA Loss:   0.92 | SR: 1.90
+  Trial 284 | Epoch 200 | GP NLPD: 248792.61 | JEPA Loss:   0.96 | SR: 1.82
+  Trial 284 | Epoch 210 | GP NLPD: 249197.58 | JEPA Loss:   0.97 | SR: 1.79
+  Trial 284 | Epoch 220 | GP NLPD: 248003.94 | JEPA Loss:   0.94 | SR: 1.82
+  Trial 284 | Epoch 230 | GP NLPD: 247297.85 | JEPA Loss:   0.92 | SR: 1.88
+  Trial 284 | Epoch 240 | GP NLPD: 247989.60 | JEPA Loss:   0.91 | SR: 1.86
+  Trial 284 | Epoch 250 | GP NLPD: 246708.07 | JEPA Loss:   0.96 | SR: 1.86
+  Trial 284 | Epoch 260 | GP NLPD: 246212.74 | JEPA Loss:   0.89 | SR: 1.92
+  Trial 284 | Epoch 270 | GP NLPD: 245910.00 | JEPA Loss:   0.89 | SR: 1.95
+  Trial 284 | Epoch 280 | GP NLPD: 245235.31 | JEPA Loss:   0.96 | SR: 1.88
+  Trial 284 | Epoch 290 | GP NLPD: 244321.66 | JEPA Loss:   0.87 | SR: 1.99
+  Trial 284 | Epoch 299 | GP NLPD: 244099.57 | JEPA Loss:   0.87 | SR: 1.94
+[I 2026-09-04 01:46:23,582] Trial 284 finished with values: [242290.5703125, 0.762487697104613, -2.2161247928937278] and parameters: {'encoder_layers': 2, 'encoder_hidden': 32, 'latent_dim': 7, 'gp_num_inducing': 256, 'gp_kernel': 'Matern32', 'gp_periodic': True, 'gp_composition': 'multiplicative', 'gp_mean': 'Constant', 'lr': 0.0019202928033968346, 'gp_lr': 0.015958729947080228, 'var_weight': 22.86628996503969, 'cov_weight': 44.334893952817794, 'topo_weight': 4.528898637732294, 'ema_tau': 0.997626792078338, 'aug_noise': 0.026102268557593213, 'aug_dropout': 0.08333322854493784}.
+  Trial 285: JIT compilation took 0.0s
+  Trial 285 | Epoch 000 | GP NLPD: 253172.44 | JEPA Loss:   0.73 | SR: 2.72
+  Trial 285 | Epoch 010 | GP NLPD: 276494.38 | JEPA Loss:   0.59 | SR: 3.93
+  Trial 285 | Epoch 020 | GP NLPD: 287797.54 | JEPA Loss:   0.73 | SR: 2.91
+  Trial 285 | Epoch 030 | GP NLPD: 286594.19 | JEPA Loss:   0.82 | SR: 2.50
+  Trial 285 | Epoch 040 | GP NLPD: 287950.14 | JEPA Loss:   0.87 | SR: 2.37
+  Trial 285 | Epoch 050 | GP NLPD: 288612.32 | JEPA Loss:   0.85 | SR: 2.36
+  Trial 285 | Epoch 060 | GP NLPD: 288500.72 | JEPA Loss:   0.86 | SR: 2.38
+  Trial 285 | Epoch 070 | GP NLPD: 288044.30 | JEPA Loss:   0.86 | SR: 2.36
+  Trial 285 | Epoch 080 | GP NLPD: 287593.97 | JEPA Loss:   0.86 | SR: 2.40
+  Trial 285 | Epoch 090 | GP NLPD: 287869.05 | JEPA Loss:   0.86 | SR: 2.41
+  Trial 285 | Epoch 100 | GP NLPD: 288250.91 | JEPA Loss:   0.86 | SR: 2.43
+  Trial 285 | Epoch 110 | GP NLPD: 288486.66 | JEPA Loss:   0.87 | SR: 2.42
+  Trial 285 | Epoch 120 | GP NLPD: 289155.68 | JEPA Loss:   0.86 | SR: 2.45
+  Trial 285 | Epoch 130 | GP NLPD: 289573.76 | JEPA Loss:   0.88 | SR: 2.43
+  Trial 285 | Epoch 140 | GP NLPD: 290259.84 | JEPA Loss:   0.87 | SR: 2.46
+  Trial 285 | Epoch 150 | GP NLPD: 290585.28 | JEPA Loss:   0.88 | SR: 2.46
+  Trial 285 | Epoch 160 | GP NLPD: 290865.03 | JEPA Loss:   0.88 | SR: 2.45
+  Trial 285 | Epoch 170 | GP NLPD: 290637.52 | JEPA Loss:   0.89 | SR: 2.42
+  Trial 285 | Epoch 180 | GP NLPD: 291091.94 | JEPA Loss:   0.87 | SR: 2.46
+  Trial 285 | Epoch 190 | GP NLPD: 291694.99 | JEPA Loss:   0.88 | SR: 2.46
+  Trial 285 | Epoch 200 | GP NLPD: 291048.21 | JEPA Loss:   0.87 | SR: 2.48
+  Trial 285 | Epoch 210 | GP NLPD: 290811.61 | JEPA Loss:   0.87 | SR: 2.47
+  Trial 285 | Epoch 220 | GP NLPD: 289964.77 | JEPA Loss:   0.87 | SR: 2.44
+  Trial 285 | Epoch 230 | GP NLPD: 289628.88 | JEPA Loss:   0.86 | SR: 2.48
+  Trial 285 | Epoch 240 | GP NLPD: 289563.25 | JEPA Loss:   0.88 | SR: 2.42
+  Trial 285 | Epoch 250 | GP NLPD: 289491.22 | JEPA Loss:   0.87 | SR: 2.43
+  Trial 285 | Epoch 260 | GP NLPD: 289007.36 | JEPA Loss:   0.86 | SR: 2.43
+  Trial 285 | Epoch 270 | GP NLPD: 288933.17 | JEPA Loss:   0.87 | SR: 2.40
+  Trial 285 | Epoch 280 | GP NLPD: 288283.65 | JEPA Loss:   0.87 | SR: 2.43
+  Trial 285 | Epoch 290 | GP NLPD: 287564.39 | JEPA Loss:   0.88 | SR: 2.42
+  Trial 285 | Epoch 299 | GP NLPD: 287710.45 | JEPA Loss:   0.88 | SR: 2.42
+[I 2026-09-04 01:47:06,244] Trial 285 finished with values: [286594.1927083333, 0.8179179430007935, -2.502924680709839] and parameters: {'encoder_layers': 2, 'encoder_hidden': 32, 'latent_dim': 9, 'gp_num_inducing': 256, 'gp_kernel': 'RBF', 'gp_periodic': False, 'gp_composition': 'additive', 'gp_mean': 'Zero', 'lr': 0.00030287453488654767, 'gp_lr': 0.0024115016063732246, 'var_weight': 13.976881155514263, 'cov_weight': 48.0288251767834, 'topo_weight': 4.629866469735148, 'ema_tau': 0.995972396994605, 'aug_noise': 0.026102268557593213, 'aug_dropout': 0.08333322854493784}.
+  Trial 286: JIT compilation took 0.0s
+  Trial 286 | Epoch 000 | GP NLPD: 180815.35 | JEPA Loss:   0.65 | SR: 1.98
+  Trial 286 | Epoch 010 | GP NLPD: 212815.15 | JEPA Loss:   1.29 | SR: 1.28
+  Trial 286 | Epoch 020 | GP NLPD: 229920.88 | JEPA Loss:   0.95 | SR: 1.46
+  Trial 286 | Epoch 030 | GP NLPD: 228413.89 | JEPA Loss:   0.77 | SR: 2.06
+  Trial 286 | Epoch 040 | GP NLPD: 224449.57 | JEPA Loss:   0.77 | SR: 2.30
+  Trial 286 | Epoch 050 | GP NLPD: 222683.52 | JEPA Loss:   0.86 | SR: 2.32
+  Trial 286 | Epoch 060 | GP NLPD: 222498.05 | JEPA Loss:   0.90 | SR: 2.24
+  Trial 286 | Epoch 070 | GP NLPD: 221713.89 | JEPA Loss:   0.80 | SR: 2.37
+  Trial 286 | Epoch 080 | GP NLPD: 214986.18 | JEPA Loss:   0.91 | SR: 2.11
+  Trial 286 | Epoch 090 | GP NLPD: 211676.59 | JEPA Loss:   0.98 | SR: 1.94
+  Trial 286 | Epoch 100 | GP NLPD: 211721.25 | JEPA Loss:   0.99 | SR: 1.97
+  Trial 286 | Epoch 110 | GP NLPD: 212570.37 | JEPA Loss:   1.06 | SR: 1.88
+  Trial 286 | Epoch 120 | GP NLPD: 213290.41 | JEPA Loss:   1.04 | SR: 1.88
+  Trial 286 | Epoch 130 | GP NLPD: 213972.65 | JEPA Loss:   1.07 | SR: 1.82
+  Trial 286 | Epoch 140 | GP NLPD: 214273.27 | JEPA Loss:   1.17 | SR: 1.90
+  Trial 286 | Epoch 150 | GP NLPD: 214969.12 | JEPA Loss:   1.19 | SR: 1.89
+  Trial 286 | Epoch 160 | GP NLPD: 216702.25 | JEPA Loss:   1.19 | SR: 1.90
+  Trial 286 | Epoch 170 | GP NLPD: 217570.83 | JEPA Loss:   1.23 | SR: 1.89
+  Trial 286 | Epoch 180 | GP NLPD: 219108.62 | JEPA Loss:   1.34 | SR: 1.91
+  Trial 286 | Epoch 190 | GP NLPD: 219371.30 | JEPA Loss:   1.24 | SR: 1.93
+  Trial 286 | Epoch 200 | GP NLPD: 219703.15 | JEPA Loss:   1.42 | SR: 1.86
+  Trial 286 | Epoch 210 | GP NLPD: 219475.93 | JEPA Loss:   1.44 | SR: 1.87
+  Trial 286 | Epoch 220 | GP NLPD: 220152.29 | JEPA Loss:   1.52 | SR: 1.92
+  Trial 286 | Epoch 230 | GP NLPD: 220210.02 | JEPA Loss:   1.45 | SR: 1.87
+  Trial 286 | Epoch 240 | GP NLPD: 220903.41 | JEPA Loss:   1.58 | SR: 1.91
+  Trial 286 | Epoch 250 | GP NLPD: 221764.58 | JEPA Loss:   1.62 | SR: 1.92
+  Trial 286 | Epoch 260 | GP NLPD: 222352.88 | JEPA Loss:   1.73 | SR: 1.95
+  Trial 286 | Epoch 270 | GP NLPD: 222590.47 | JEPA Loss:   1.70 | SR: 1.94
+  Trial 286 | Epoch 280 | GP NLPD: 223566.62 | JEPA Loss:   1.78 | SR: 1.98
+  Trial 286 | Epoch 290 | GP NLPD: 223620.48 | JEPA Loss:   1.96 | SR: 1.90
+  Trial 286 | Epoch 299 | GP NLPD: 224014.63 | JEPA Loss:   1.90 | SR: 1.99
+[I 2026-09-04 01:47:53,899] Trial 286 finished with values: [210995.71354166666, 0.9117698520421982, -1.98236080010732] and parameters: {'encoder_layers': 3, 'encoder_hidden': 32, 'latent_dim': 6, 'gp_num_inducing': 256, 'gp_kernel': 'Matern52', 'gp_periodic': True, 'gp_composition': 'multiplicative', 'gp_mean': 'Zero', 'lr': 0.0026544586619670126, 'gp_lr': 0.0024115016063732246, 'var_weight': 26.541671589402718, 'cov_weight': 22.47350616431367, 'topo_weight': 1.261097102094872, 'ema_tau': 0.9974158937221028, 'aug_noise': 0.09715031036948917, 'aug_dropout': 0.1288709725339051}.
+  Trial 287: JIT compilation took 0.0s
+  Trial 287 | Epoch 000 | GP NLPD: 190759.00 | JEPA Loss:   1.67 | SR: 1.25
+  Trial 287 | Epoch 010 | GP NLPD: 257923.26 | JEPA Loss:   1.11 | SR: 1.10
+  Trial 287 | Epoch 020 | GP NLPD: 257201.24 | JEPA Loss:   1.66 | SR: 1.04
+  Trial 287 | Epoch 030 | GP NLPD: 261058.79 | JEPA Loss:   3.77 | SR: 1.09
+  Trial 287 | Epoch 040 | GP NLPD: 266631.55 | JEPA Loss:   2.65 | SR: 1.06
+  Trial 287 | Epoch 050 | GP NLPD: 287967.92 | JEPA Loss:   1.09 | SR: 1.07
+  Trial 287 | Epoch 060 | GP NLPD: 315201.84 | JEPA Loss:   1.47 | SR: 1.06
+  Trial 287 | Epoch 070 | GP NLPD: 312448.66 | JEPA Loss:   1.19 | SR: 1.04
+  Trial 287 | Epoch 080 | GP NLPD: 291034.28 | JEPA Loss:   1.26 | SR: 1.04
+  Trial 287 | Epoch 090 | GP NLPD: 243452.30 | JEPA Loss:   1.24 | SR: 1.02
+  Trial 287 | Epoch 100 | GP NLPD: 216926.21 | JEPA Loss:   1.31 | SR: 1.03
+  Trial 287 | Epoch 110 | GP NLPD: 217042.39 | JEPA Loss:   4.26 | SR: 1.01
+  Trial 287 | Epoch 120 | GP NLPD: 204270.68 | JEPA Loss:  13.43 | SR: 1.09
+  Trial 287 | Epoch 130 | GP NLPD: 330859.45 | JEPA Loss:   3.93 | SR: 1.01
+  Trial 287 | Epoch 140 | GP NLPD: 185322.60 | JEPA Loss:   6.11 | SR: 1.01
+  Trial 287 | Epoch 150 | GP NLPD: 431899.56 | JEPA Loss:   2.32 | SR: 1.01
+  Trial 287 | Epoch 160 | GP NLPD: 302339.75 | JEPA Loss:   5.84 | SR: 1.01
+  Trial 287 | Epoch 170 | GP NLPD: 192038.05 | JEPA Loss:  11.58 | SR: 1.02
+  Trial 287 | Epoch 180 | GP NLPD: 461997.90 | JEPA Loss:   7.81 | SR: 1.00
+  Trial 287 | Epoch 190 | GP NLPD: 493172.61 | JEPA Loss:   6.08 | SR: 1.00
+  Trial 287 | Epoch 200 | GP NLPD: 312412.91 | JEPA Loss:   8.89 | SR: 1.00
+  Trial 287 | Epoch 210 | GP NLPD: 331535.34 | JEPA Loss:   7.74 | SR: 1.02
+  Trial 287 | Epoch 220 | GP NLPD: 431805.41 | JEPA Loss:   9.89 | SR: 1.01
+  Trial 287 | Epoch 230 | GP NLPD: 336508.29 | JEPA Loss:  25.87 | SR: 1.03
+  Trial 287 | Epoch 240 | GP NLPD: 400320.94 | JEPA Loss:   8.40 | SR: 1.04
+  Trial 287 | Epoch 250 | GP NLPD: 310846.42 | JEPA Loss:  22.40 | SR: 1.05
+  Trial 287 | Epoch 260 | GP NLPD: 292458.78 | JEPA Loss:   3.37 | SR: 1.08
+  Trial 287 | Epoch 270 | GP NLPD: 312670.89 | JEPA Loss:   3.11 | SR: 1.03
+  Trial 287 | Epoch 280 | GP NLPD: 274772.36 | JEPA Loss:   3.76 | SR: 1.03
+  Trial 287 | Epoch 290 | GP NLPD: 294764.75 | JEPA Loss:   1.44 | SR: 1.19
+  Trial 287 | Epoch 299 | GP NLPD: 278568.97 | JEPA Loss:   1.30 | SR: 1.35
+[I 2026-09-04 01:49:11,889] Trial 287 finished with values: [185322.59895833334, 6.107997144261995, -1.0083170135815938] and parameters: {'encoder_layers': 7, 'encoder_hidden': 64, 'latent_dim': 6, 'gp_num_inducing': 256, 'gp_kernel': 'Matern12', 'gp_periodic': True, 'gp_composition': 'multiplicative', 'gp_mean': 'Constant', 'lr': 0.0030788232552787943, 'gp_lr': 0.0024115016063732246, 'var_weight': 27.8191887647068, 'cov_weight': 27.869006837038526, 'topo_weight': 2.804988248611534, 'ema_tau': 0.9905951340409401, 'aug_noise': 0.09715031036948917, 'aug_dropout': 0.2807929211166537}.
+  Trial 288: JIT compilation took 0.0s
+  Trial 288 | Epoch 000 | GP NLPD: 188796.92 | JEPA Loss:   0.77 | SR: 2.85
+  Trial 288 | Epoch 010 | GP NLPD: 186290.24 | JEPA Loss:   0.62 | SR: 3.03
+  Trial 288 | Epoch 020 | GP NLPD: 190541.57 | JEPA Loss:   0.74 | SR: 2.76
+  Trial 288 | Epoch 030 | GP NLPD: 205739.73 | JEPA Loss:   0.90 | SR: 2.38
+  Trial 288 | Epoch 040 | GP NLPD: 223357.18 | JEPA Loss:   0.89 | SR: 2.43
+  Trial 288 | Epoch 050 | GP NLPD: 235459.95 | JEPA Loss:   0.90 | SR: 2.40
+  Trial 288 | Epoch 060 | GP NLPD: 243029.55 | JEPA Loss:   0.90 | SR: 2.40
+  Trial 288 | Epoch 070 | GP NLPD: 249025.48 | JEPA Loss:   0.90 | SR: 2.42
+  Trial 288 | Epoch 080 | GP NLPD: 253635.60 | JEPA Loss:   0.89 | SR: 2.46
+  Trial 288 | Epoch 090 | GP NLPD: 257464.21 | JEPA Loss:   0.90 | SR: 2.48
+  Trial 288 | Epoch 100 | GP NLPD: 260732.55 | JEPA Loss:   0.89 | SR: 2.53
+  Trial 288 | Epoch 110 | GP NLPD: 263495.23 | JEPA Loss:   0.89 | SR: 2.52
+  Trial 288 | Epoch 120 | GP NLPD: 265935.37 | JEPA Loss:   0.87 | SR: 2.58
+  Trial 288 | Epoch 130 | GP NLPD: 268406.17 | JEPA Loss:   0.88 | SR: 2.56
+  Trial 288 | Epoch 140 | GP NLPD: 270526.39 | JEPA Loss:   0.88 | SR: 2.55
+  Trial 288 | Epoch 150 | GP NLPD: 273146.91 | JEPA Loss:   0.88 | SR: 2.55
+  Trial 288 | Epoch 160 | GP NLPD: 275707.74 | JEPA Loss:   0.88 | SR: 2.59
+  Trial 288 | Epoch 170 | GP NLPD: 278608.80 | JEPA Loss:   0.90 | SR: 2.58
+  Trial 288 | Epoch 180 | GP NLPD: 280552.96 | JEPA Loss:   0.89 | SR: 2.59
+  Trial 288 | Epoch 190 | GP NLPD: 282335.34 | JEPA Loss:   0.90 | SR: 2.56
+  Trial 288 | Epoch 200 | GP NLPD: 284191.59 | JEPA Loss:   0.91 | SR: 2.54
+  Trial 288 | Epoch 210 | GP NLPD: 285994.93 | JEPA Loss:   0.91 | SR: 2.56
+  Trial 288 | Epoch 220 | GP NLPD: 287540.14 | JEPA Loss:   0.91 | SR: 2.56
+  Trial 288 | Epoch 230 | GP NLPD: 288874.96 | JEPA Loss:   0.92 | SR: 2.54
+  Trial 288 | Epoch 240 | GP NLPD: 290321.82 | JEPA Loss:   0.92 | SR: 2.56
+  Trial 288 | Epoch 250 | GP NLPD: 291601.79 | JEPA Loss:   0.92 | SR: 2.55
+  Trial 288 | Epoch 260 | GP NLPD: 292509.57 | JEPA Loss:   0.92 | SR: 2.54
+  Trial 288 | Epoch 270 | GP NLPD: 293946.66 | JEPA Loss:   0.93 | SR: 2.55
+  Trial 288 | Epoch 280 | GP NLPD: 295182.91 | JEPA Loss:   0.95 | SR: 2.50
+  Trial 288 | Epoch 290 | GP NLPD: 296108.52 | JEPA Loss:   0.95 | SR: 2.48
+  Trial 288 | Epoch 299 | GP NLPD: 297015.22 | JEPA Loss:   0.96 | SR: 2.47
+[I 2026-09-04 01:50:10,666] Trial 288 finished with values: [205739.72916666666, 0.895040630052487, -2.375365217526754] and parameters: {'encoder_layers': 4, 'encoder_hidden': 32, 'latent_dim': 7, 'gp_num_inducing': 512, 'gp_kernel': 'Matern12', 'gp_periodic': False, 'gp_composition': 'multiplicative', 'gp_mean': 'Constant', 'lr': 0.00010585628393351758, 'gp_lr': 0.0020665789346112607, 'var_weight': 27.943711574005693, 'cov_weight': 24.84972163191404, 'topo_weight': 6.614861157139179, 'ema_tau': 0.9930349951350527, 'aug_noise': 0.14440675376697032, 'aug_dropout': 0.1621221668486078}.
+  Trial 289: JIT compilation took 0.0s
+  Trial 289 | Epoch 000 | GP NLPD: 315107.29 | JEPA Loss:   0.74 | SR: 3.52
+  Trial 289 | Epoch 010 | GP NLPD: 371008.70 | JEPA Loss:   0.59 | SR: 3.89
+  Trial 289 | Epoch 020 | GP NLPD: 351699.83 | JEPA Loss:   0.87 | SR: 3.14
+  Trial 289 | Epoch 030 | GP NLPD: 340750.84 | JEPA Loss:   0.93 | SR: 3.08
+  Trial 289 | Epoch 040 | GP NLPD: 332649.10 | JEPA Loss:   1.03 | SR: 3.08
+  Trial 289 | Epoch 050 | GP NLPD: 328326.76 | JEPA Loss:   0.97 | SR: 3.08
+  Trial 289 | Epoch 060 | GP NLPD: 325814.36 | JEPA Loss:   1.08 | SR: 3.14
+  Trial 289 | Epoch 070 | GP NLPD: 324971.37 | JEPA Loss:   0.93 | SR: 3.21
+  Trial 289 | Epoch 080 | GP NLPD: 327760.91 | JEPA Loss:   0.98 | SR: 3.13
+  Trial 289 | Epoch 090 | GP NLPD: 329867.14 | JEPA Loss:   0.93 | SR: 3.26
+  Trial 289 | Epoch 100 | GP NLPD: 332123.93 | JEPA Loss:   0.97 | SR: 3.36
+  Trial 289 | Epoch 110 | GP NLPD: 332948.51 | JEPA Loss:   0.93 | SR: 3.39
+  Trial 289 | Epoch 120 | GP NLPD: 335609.68 | JEPA Loss:   0.91 | SR: 3.45
+  Trial 289 | Epoch 130 | GP NLPD: 338295.59 | JEPA Loss:   0.89 | SR: 3.54
+  Trial 289 | Epoch 140 | GP NLPD: 341198.68 | JEPA Loss:   0.87 | SR: 3.50
+  Trial 289 | Epoch 150 | GP NLPD: 344223.74 | JEPA Loss:   0.79 | SR: 3.72
+  Trial 289 | Epoch 160 | GP NLPD: 346603.92 | JEPA Loss:   0.78 | SR: 3.90
+  Trial 289 | Epoch 170 | GP NLPD: 350039.08 | JEPA Loss:   0.75 | SR: 4.04
+  Trial 289 | Epoch 180 | GP NLPD: 352031.39 | JEPA Loss:   0.76 | SR: 4.08
+  Trial 289 | Epoch 190 | GP NLPD: 352143.04 | JEPA Loss:   0.78 | SR: 4.18
+  Trial 289 | Epoch 200 | GP NLPD: 352337.27 | JEPA Loss:   0.78 | SR: 4.18
+  Trial 289 | Epoch 210 | GP NLPD: 352827.53 | JEPA Loss:   0.70 | SR: 4.09
+  Trial 289 | Epoch 220 | GP NLPD: 353924.81 | JEPA Loss:   0.70 | SR: 3.88
+  Trial 289 | Epoch 230 | GP NLPD: 354031.86 | JEPA Loss:   0.72 | SR: 3.90
+  Trial 289 | Epoch 240 | GP NLPD: 353934.90 | JEPA Loss:   0.73 | SR: 3.78
+  Trial 289 | Epoch 250 | GP NLPD: 353806.97 | JEPA Loss:   0.78 | SR: 3.88
+  Trial 289 | Epoch 260 | GP NLPD: 352553.90 | JEPA Loss:   0.68 | SR: 3.53
+  Trial 289 | Epoch 270 | GP NLPD: 352150.54 | JEPA Loss:   0.66 | SR: 3.70
+  Trial 289 | Epoch 280 | GP NLPD: 349560.30 | JEPA Loss:   0.65 | SR: 3.83
+  Trial 289 | Epoch 290 | GP NLPD: 347756.69 | JEPA Loss:   0.63 | SR: 3.63
+  Trial 289 | Epoch 299 | GP NLPD: 346398.53 | JEPA Loss:   0.68 | SR: 3.19
+[I 2026-09-04 01:51:15,481] Trial 289 finished with values: [324417.2864583333, 0.9557801621655623, -3.1842473347981772] and parameters: {'encoder_layers': 3, 'encoder_hidden': 128, 'latent_dim': 10, 'gp_num_inducing': 512, 'gp_kernel': 'Matern52', 'gp_periodic': False, 'gp_composition': 'multiplicative', 'gp_mean': 'Constant', 'lr': 0.00442464464801017, 'gp_lr': 0.0018685204060235334, 'var_weight': 46.65452112592987, 'cov_weight': 40.536142928426436, 'topo_weight': 9.77112555276282, 'ema_tau': 0.9975560980019411, 'aug_noise': 0.10916436997821972, 'aug_dropout': 0.25716732428004635}.
+  Trial 290: JIT compilation took 0.0s
+  Trial 290 | Epoch 000 | GP NLPD: 354763.35 | JEPA Loss:   1.03 | SR: 2.02
+  Trial 290 | Epoch 010 | GP NLPD: 368565.29 | JEPA Loss:   0.68 | SR: 3.70
+  Trial 290 | Epoch 020 | GP NLPD: 343359.33 | JEPA Loss:   0.62 | SR: 3.95
+  Trial 290 | Epoch 030 | GP NLPD: 333143.42 | JEPA Loss:   0.65 | SR: 3.52
+  Trial 290 | Epoch 040 | GP NLPD: 338360.61 | JEPA Loss:   0.60 | SR: 3.87
+  Trial 290 | Epoch 050 | GP NLPD: 337737.81 | JEPA Loss:   0.61 | SR: 3.68
+  Trial 290 | Epoch 060 | GP NLPD: 338400.45 | JEPA Loss:   0.64 | SR: 3.44
+  Trial 290 | Epoch 070 | GP NLPD: 339867.17 | JEPA Loss:   0.64 | SR: 3.56
+  Trial 290 | Epoch 080 | GP NLPD: 340596.15 | JEPA Loss:   0.68 | SR: 3.39
+  Trial 290 | Epoch 090 | GP NLPD: 340374.46 | JEPA Loss:   0.79 | SR: 3.10
+  Trial 290 | Epoch 100 | GP NLPD: 342481.83 | JEPA Loss:   0.84 | SR: 3.03
+  Trial 290 | Epoch 110 | GP NLPD: 342399.66 | JEPA Loss:   0.86 | SR: 2.82
+  Trial 290 | Epoch 120 | GP NLPD: 338552.32 | JEPA Loss:   0.90 | SR: 2.89
+  Trial 290 | Epoch 130 | GP NLPD: 336850.39 | JEPA Loss:   0.86 | SR: 2.79
+  Trial 290 | Epoch 140 | GP NLPD: 337364.86 | JEPA Loss:   0.96 | SR: 2.76
+  Trial 290 | Epoch 150 | GP NLPD: 336136.68 | JEPA Loss:   0.88 | SR: 2.70
+  Trial 290 | Epoch 160 | GP NLPD: 331593.65 | JEPA Loss:   0.96 | SR: 2.72
+  Trial 290 | Epoch 170 | GP NLPD: 328908.29 | JEPA Loss:   0.94 | SR: 2.63
+  Trial 290 | Epoch 180 | GP NLPD: 323380.05 | JEPA Loss:   0.94 | SR: 2.48
+  Trial 290 | Epoch 190 | GP NLPD: 319692.90 | JEPA Loss:   0.95 | SR: 2.51
+  Trial 290 | Epoch 200 | GP NLPD: 316280.80 | JEPA Loss:   0.87 | SR: 2.41
+  Trial 290 | Epoch 210 | GP NLPD: 311752.15 | JEPA Loss:   0.98 | SR: 2.44
+  Trial 290 | Epoch 220 | GP NLPD: 309734.14 | JEPA Loss:   0.98 | SR: 2.25
+  Trial 290 | Epoch 230 | GP NLPD: 313432.00 | JEPA Loss:   1.11 | SR: 2.12
+  Trial 290 | Epoch 240 | GP NLPD: 313177.96 | JEPA Loss:   1.10 | SR: 2.10
+  Trial 290 | Epoch 250 | GP NLPD: 310040.98 | JEPA Loss:   1.05 | SR: 2.20
+  Trial 290 | Epoch 260 | GP NLPD: 299774.07 | JEPA Loss:   0.92 | SR: 2.20
+  Trial 290 | Epoch 270 | GP NLPD: 291852.72 | JEPA Loss:   0.86 | SR: 2.02
+  Trial 290 | Epoch 280 | GP NLPD: 296636.07 | JEPA Loss:   0.83 | SR: 1.90
+  Trial 290 | Epoch 290 | GP NLPD: 297017.00 | JEPA Loss:   0.94 | SR: 1.65
+  Trial 290 | Epoch 299 | GP NLPD: 295752.80 | JEPA Loss:   0.91 | SR: 1.72
+[I 2026-09-04 01:52:12,744] Trial 290 finished with values: [291852.7239583333, 0.8589501405755678, -2.022548774878184] and parameters: {'encoder_layers': 4, 'encoder_hidden': 128, 'latent_dim': 9, 'gp_num_inducing': 128, 'gp_kernel': 'Matern12', 'gp_periodic': True, 'gp_composition': 'additive', 'gp_mean': 'Zero', 'lr': 0.00442464464801017, 'gp_lr': 0.0023815408275889654, 'var_weight': 22.05052402333557, 'cov_weight': 28.22101649339252, 'topo_weight': 9.207543527284134, 'ema_tau': 0.9917082375834424, 'aug_noise': 0.003053042833115383, 'aug_dropout': 0.15342346279266736}.
+  Trial 291: JIT compilation took 0.0s
+  Trial 291 | Epoch 000 | GP NLPD: 211969.11 | JEPA Loss:   0.52 | SR: 4.59
+  Trial 291 | Epoch 010 | GP NLPD: 279975.43 | JEPA Loss:   1.07 | SR: 3.68
+  Trial 291 | Epoch 020 | GP NLPD: 332843.50 | JEPA Loss:   0.70 | SR: 3.90
+  Trial 291 | Epoch 030 | GP NLPD: 343045.70 | JEPA Loss:   0.70 | SR: 3.57
+  Trial 291 | Epoch 040 | GP NLPD: 342885.31 | JEPA Loss:   0.74 | SR: 3.64
+  Trial 291 | Epoch 050 | GP NLPD: 341177.21 | JEPA Loss:   0.74 | SR: 3.52
+  Trial 291 | Epoch 060 | GP NLPD: 340319.87 | JEPA Loss:   0.76 | SR: 3.36
+  Trial 291 | Epoch 070 | GP NLPD: 343600.95 | JEPA Loss:   0.78 | SR: 3.16
+  Trial 291 | Epoch 080 | GP NLPD: 343491.49 | JEPA Loss:   0.78 | SR: 3.17
+  Trial 291 | Epoch 090 | GP NLPD: 350329.62 | JEPA Loss:   0.80 | SR: 3.19
+  Trial 291 | Epoch 100 | GP NLPD: 349780.85 | JEPA Loss:   0.82 | SR: 3.10
+  Trial 291 | Epoch 110 | GP NLPD: 350007.11 | JEPA Loss:   0.82 | SR: 3.05
+  Trial 291 | Epoch 120 | GP NLPD: 348947.47 | JEPA Loss:   0.84 | SR: 2.91
+  Trial 291 | Epoch 130 | GP NLPD: 348822.02 | JEPA Loss:   0.86 | SR: 2.78
+  Trial 291 | Epoch 140 | GP NLPD: 348910.92 | JEPA Loss:   0.86 | SR: 2.80
+  Trial 291 | Epoch 150 | GP NLPD: 349359.10 | JEPA Loss:   0.86 | SR: 2.77
+  Trial 291 | Epoch 160 | GP NLPD: 348666.78 | JEPA Loss:   0.90 | SR: 2.65
+  Trial 291 | Epoch 170 | GP NLPD: 346672.42 | JEPA Loss:   0.90 | SR: 2.66
+  Trial 291 | Epoch 180 | GP NLPD: 347547.46 | JEPA Loss:   0.88 | SR: 2.61
+  Trial 291 | Epoch 190 | GP NLPD: 347197.65 | JEPA Loss:   0.90 | SR: 2.53
+  Trial 291 | Epoch 200 | GP NLPD: 346952.96 | JEPA Loss:   0.89 | SR: 2.56
+  Trial 291 | Epoch 210 | GP NLPD: 346091.21 | JEPA Loss:   0.86 | SR: 2.55
+  Trial 291 | Epoch 220 | GP NLPD: 344362.21 | JEPA Loss:   0.90 | SR: 2.42
+  Trial 291 | Epoch 230 | GP NLPD: 342899.68 | JEPA Loss:   0.85 | SR: 2.51
+  Trial 291 | Epoch 240 | GP NLPD: 342911.27 | JEPA Loss:   0.87 | SR: 2.53
+  Trial 291 | Epoch 250 | GP NLPD: 340834.02 | JEPA Loss:   0.85 | SR: 2.52
+  Trial 291 | Epoch 260 | GP NLPD: 343504.39 | JEPA Loss:   0.87 | SR: 2.47
+  Trial 291 | Epoch 270 | GP NLPD: 345344.43 | JEPA Loss:   0.85 | SR: 2.50
+  Trial 291 | Epoch 280 | GP NLPD: 346337.83 | JEPA Loss:   0.83 | SR: 2.47
+  Trial 291 | Epoch 290 | GP NLPD: 346210.07 | JEPA Loss:   0.86 | SR: 2.43
+  Trial 291 | Epoch 299 | GP NLPD: 342477.56 | JEPA Loss:   0.85 | SR: 2.36
+[I 2026-09-04 01:53:14,877] Trial 291 finished with values: [338516.2604166667, 0.7726431588331858, -3.385011871655782] and parameters: {'encoder_layers': 4, 'encoder_hidden': 64, 'latent_dim': 10, 'gp_num_inducing': 512, 'gp_kernel': 'Matern12', 'gp_periodic': False, 'gp_composition': 'multiplicative', 'gp_mean': 'Zero', 'lr': 0.0008681408145019698, 'gp_lr': 0.046773676598639256, 'var_weight': 39.53839102778835, 'cov_weight': 45.73907155823622, 'topo_weight': 9.932749137372326, 'ema_tau': 0.997537370037809, 'aug_noise': 0.006043201682375577, 'aug_dropout': 0.07093422996100088}.
+  Trial 292: JIT compilation took 0.0s
+  Trial 292 | Epoch 000 | GP NLPD: 285285.43 | JEPA Loss:   0.64 | SR: 3.65
+  Trial 292 | Epoch 010 | GP NLPD: 310619.00 | JEPA Loss:   0.57 | SR: 4.09
+  Trial 292 | Epoch 020 | GP NLPD: 313331.57 | JEPA Loss:   0.62 | SR: 3.76
+  Trial 292 | Epoch 030 | GP NLPD: 305292.15 | JEPA Loss:   0.66 | SR: 3.62
+  Trial 292 | Epoch 040 | GP NLPD: 299740.18 | JEPA Loss:   0.64 | SR: 3.50
+  Trial 292 | Epoch 050 | GP NLPD: 294329.54 | JEPA Loss:   0.62 | SR: 3.65
+  Trial 292 | Epoch 060 | GP NLPD: 290682.07 | JEPA Loss:   0.65 | SR: 3.64
+  Trial 292 | Epoch 070 | GP NLPD: 285983.04 | JEPA Loss:   0.63 | SR: 3.69
+  Trial 292 | Epoch 080 | GP NLPD: 283557.84 | JEPA Loss:   0.63 | SR: 3.58
+  Trial 292 | Epoch 090 | GP NLPD: 281966.23 | JEPA Loss:   0.63 | SR: 3.49
+  Trial 292 | Epoch 100 | GP NLPD: 279863.30 | JEPA Loss:   0.64 | SR: 3.43
+  Trial 292 | Epoch 110 | GP NLPD: 279210.42 | JEPA Loss:   0.65 | SR: 3.32
+  Trial 292 | Epoch 120 | GP NLPD: 279543.18 | JEPA Loss:   0.66 | SR: 3.32
+  Trial 292 | Epoch 130 | GP NLPD: 281036.16 | JEPA Loss:   0.66 | SR: 3.26
+  Trial 292 | Epoch 140 | GP NLPD: 280928.35 | JEPA Loss:   0.69 | SR: 3.12
+  Trial 292 | Epoch 150 | GP NLPD: 282558.86 | JEPA Loss:   0.68 | SR: 3.11
+  Trial 292 | Epoch 160 | GP NLPD: 283542.68 | JEPA Loss:   0.69 | SR: 3.07
+  Trial 292 | Epoch 170 | GP NLPD: 283303.57 | JEPA Loss:   0.69 | SR: 3.11
+  Trial 292 | Epoch 180 | GP NLPD: 282833.10 | JEPA Loss:   0.69 | SR: 3.06
+  Trial 292 | Epoch 190 | GP NLPD: 282095.80 | JEPA Loss:   0.68 | SR: 3.07
+  Trial 292 | Epoch 200 | GP NLPD: 282345.96 | JEPA Loss:   0.69 | SR: 2.99
+  Trial 292 | Epoch 210 | GP NLPD: 281234.34 | JEPA Loss:   0.70 | SR: 2.97
+  Trial 292 | Epoch 220 | GP NLPD: 281140.83 | JEPA Loss:   0.70 | SR: 2.96
+  Trial 292 | Epoch 230 | GP NLPD: 281740.71 | JEPA Loss:   0.70 | SR: 2.94
+  Trial 292 | Epoch 240 | GP NLPD: 281382.71 | JEPA Loss:   0.71 | SR: 2.90
+  Trial 292 | Epoch 250 | GP NLPD: 281700.33 | JEPA Loss:   0.72 | SR: 2.84
+  Trial 292 | Epoch 260 | GP NLPD: 282452.75 | JEPA Loss:   0.73 | SR: 2.82
+  Trial 292 | Epoch 270 | GP NLPD: 283953.60 | JEPA Loss:   0.73 | SR: 2.80
+  Trial 292 | Epoch 280 | GP NLPD: 285625.60 | JEPA Loss:   0.74 | SR: 2.75
+  Trial 292 | Epoch 290 | GP NLPD: 286654.44 | JEPA Loss:   0.76 | SR: 2.65
+  Trial 292 | Epoch 299 | GP NLPD: 287615.95 | JEPA Loss:   0.77 | SR: 2.60
+[I 2026-09-04 01:54:18,706] Trial 292 finished with values: [279116.984375, 0.6536178613702456, -3.339768369992574] and parameters: {'encoder_layers': 4, 'encoder_hidden': 64, 'latent_dim': 9, 'gp_num_inducing': 512, 'gp_kernel': 'Matern52', 'gp_periodic': True, 'gp_composition': 'additive', 'gp_mean': 'Zero', 'lr': 0.0002166595521301043, 'gp_lr': 0.0023815408275889654, 'var_weight': 15.954275211875819, 'cov_weight': 44.334893952817794, 'topo_weight': 4.498129400339861, 'ema_tau': 0.9917082375834424, 'aug_noise': 0.09508627802450437, 'aug_dropout': 0.15342346279266736}.
+  Trial 293: JIT compilation took 0.0s
+  Trial 293 | Epoch 000 | GP NLPD: 110900.70 | JEPA Loss:   0.56 | SR: 1.98
+  Trial 293 | Epoch 010 | GP NLPD: 136812.81 | JEPA Loss:   0.95 | SR: 1.59
+  Trial 293 | Epoch 020 | GP NLPD: 142826.93 | JEPA Loss:   1.50 | SR: 1.61
+  Trial 293 | Epoch 030 | GP NLPD: 149674.95 | JEPA Loss:   1.86 | SR: 1.68
+  Trial 293 | Epoch 040 | GP NLPD: 151001.03 | JEPA Loss:   1.12 | SR: 1.79
+  Trial 293 | Epoch 050 | GP NLPD: 148223.77 | JEPA Loss:   0.75 | SR: 1.89
+  Trial 293 | Epoch 060 | GP NLPD: 147810.54 | JEPA Loss:   0.62 | SR: 1.91
+  Trial 293 | Epoch 070 | GP NLPD: 152452.84 | JEPA Loss:   0.61 | SR: 1.88
+  Trial 293 | Epoch 080 | GP NLPD: 156474.80 | JEPA Loss:   0.68 | SR: 1.82
+  Trial 293 | Epoch 090 | GP NLPD: 159845.05 | JEPA Loss:   0.66 | SR: 1.82
+  Trial 293 | Epoch 100 | GP NLPD: 159328.58 | JEPA Loss:   0.68 | SR: 1.77
+  Trial 293 | Epoch 110 | GP NLPD: 157351.39 | JEPA Loss:   0.75 | SR: 1.69
+  Trial 293 | Epoch 120 | GP NLPD: 156008.32 | JEPA Loss:   0.72 | SR: 1.76
+  Trial 293 | Epoch 130 | GP NLPD: 150841.69 | JEPA Loss:   0.75 | SR: 1.76
+  Trial 293 | Epoch 140 | GP NLPD: 148768.51 | JEPA Loss:   0.76 | SR: 1.60
+  Trial 293 | Epoch 150 | GP NLPD: 145482.98 | JEPA Loss:   0.79 | SR: 1.67
+  Trial 293 | Epoch 160 | GP NLPD: 142506.43 | JEPA Loss:   0.83 | SR: 1.52
+  Trial 293 | Epoch 170 | GP NLPD: 140066.49 | JEPA Loss:   0.74 | SR: 1.65
+  Trial 293 | Epoch 180 | GP NLPD: 138906.45 | JEPA Loss:   0.77 | SR: 1.60
+  Trial 293 | Epoch 190 | GP NLPD: 136980.79 | JEPA Loss:   0.78 | SR: 1.59
+  Trial 293 | Epoch 200 | GP NLPD: 134005.89 | JEPA Loss:   0.79 | SR: 1.60
+  Trial 293 | Epoch 210 | GP NLPD: 132545.06 | JEPA Loss:   0.83 | SR: 1.58
+  Trial 293 | Epoch 220 | GP NLPD: 130834.68 | JEPA Loss:   0.69 | SR: 1.57
+  Trial 293 | Epoch 230 | GP NLPD: 130537.69 | JEPA Loss:   0.70 | SR: 1.52
+  Trial 293 | Epoch 240 | GP NLPD: 127565.11 | JEPA Loss:   0.76 | SR: 1.47
+  Trial 293 | Epoch 250 | GP NLPD: 127930.57 | JEPA Loss:   0.77 | SR: 1.49
+  Trial 293 | Epoch 260 | GP NLPD: 125637.39 | JEPA Loss:   0.74 | SR: 1.49
+  Trial 293 | Epoch 270 | GP NLPD: 127635.42 | JEPA Loss:   0.83 | SR: 1.45
+  Trial 293 | Epoch 280 | GP NLPD: 128778.99 | JEPA Loss:   1.01 | SR: 1.45
+  Trial 293 | Epoch 290 | GP NLPD: 127584.68 | JEPA Loss:   0.97 | SR: 1.46
+  Trial 293 | Epoch 299 | GP NLPD: 127917.65 | JEPA Loss:   0.88 | SR: 1.45
+[I 2026-09-04 01:55:20,354] Trial 293 finished with values: [125600.05338541667, 0.7743860930204391, -1.5047202507654827] and parameters: {'encoder_layers': 4, 'encoder_hidden': 64, 'latent_dim': 4, 'gp_num_inducing': 512, 'gp_kernel': 'Matern12', 'gp_periodic': True, 'gp_composition': 'multiplicative', 'gp_mean': 'Zero', 'lr': 0.0008681408145019698, 'gp_lr': 0.015958729947080228, 'var_weight': 46.65452112592987, 'cov_weight': 16.54982175160469, 'topo_weight': 7.574913438894285, 'ema_tau': 0.9935049369898292, 'aug_noise': 0.17737786654919532, 'aug_dropout': 0.058093851281454306}.
+  Trial 294: JIT compilation took 0.0s
+  Trial 294 | Epoch 000 | GP NLPD: 144277.32 | JEPA Loss:   0.61 | SR: 2.51
+  Trial 294 | Epoch 010 | GP NLPD: 163616.96 | JEPA Loss:   0.56 | SR: 2.25
+  Trial 294 | Epoch 020 | GP NLPD: 165341.76 | JEPA Loss:   0.57 | SR: 2.39
+  Trial 294 | Epoch 030 | GP NLPD: 164288.00 | JEPA Loss:   0.66 | SR: 1.80
+  Trial 294 | Epoch 040 | GP NLPD: 166218.66 | JEPA Loss:   1.04 | SR: 1.59
+  Trial 294 | Epoch 050 | GP NLPD: 168055.40 | JEPA Loss:   1.43 | SR: 1.62
+  Trial 294 | Epoch 060 | GP NLPD: 167958.62 | JEPA Loss:   1.72 | SR: 1.61
+  Trial 294 | Epoch 070 | GP NLPD: 165842.97 | JEPA Loss:   1.53 | SR: 1.53
+  Trial 294 | Epoch 080 | GP NLPD: 163681.41 | JEPA Loss:   1.17 | SR: 1.46
+  Trial 294 | Epoch 090 | GP NLPD: 162530.57 | JEPA Loss:   1.10 | SR: 1.43
+  Trial 294 | Epoch 100 | GP NLPD: 161262.41 | JEPA Loss:   1.08 | SR: 1.42
+  Trial 294 | Epoch 110 | GP NLPD: 160197.51 | JEPA Loss:   1.07 | SR: 1.39
+  Trial 294 | Epoch 120 | GP NLPD: 160121.58 | JEPA Loss:   1.11 | SR: 1.36
+  Trial 294 | Epoch 130 | GP NLPD: 159994.21 | JEPA Loss:   1.11 | SR: 1.34
+  Trial 294 | Epoch 140 | GP NLPD: 160524.22 | JEPA Loss:   1.18 | SR: 1.31
+  Trial 294 | Epoch 150 | GP NLPD: 161054.15 | JEPA Loss:   1.20 | SR: 1.30
+  Trial 294 | Epoch 160 | GP NLPD: 162112.62 | JEPA Loss:   1.25 | SR: 1.31
+  Trial 294 | Epoch 170 | GP NLPD: 163417.04 | JEPA Loss:   1.32 | SR: 1.28
+  Trial 294 | Epoch 180 | GP NLPD: 163686.35 | JEPA Loss:   1.28 | SR: 1.29
+  Trial 294 | Epoch 190 | GP NLPD: 163687.03 | JEPA Loss:   1.34 | SR: 1.28
+  Trial 294 | Epoch 200 | GP NLPD: 163855.02 | JEPA Loss:   1.31 | SR: 1.29
+  Trial 294 | Epoch 210 | GP NLPD: 164498.58 | JEPA Loss:   1.37 | SR: 1.29
+  Trial 294 | Epoch 220 | GP NLPD: 164163.43 | JEPA Loss:   1.37 | SR: 1.28
+  Trial 294 | Epoch 230 | GP NLPD: 163862.14 | JEPA Loss:   1.39 | SR: 1.28
+  Trial 294 | Epoch 240 | GP NLPD: 163705.09 | JEPA Loss:   1.39 | SR: 1.27
+  Trial 294 | Epoch 250 | GP NLPD: 162889.54 | JEPA Loss:   1.36 | SR: 1.27
+  Trial 294 | Epoch 260 | GP NLPD: 162066.87 | JEPA Loss:   1.39 | SR: 1.26
+  Trial 294 | Epoch 270 | GP NLPD: 161094.14 | JEPA Loss:   1.41 | SR: 1.25
+  Trial 294 | Epoch 280 | GP NLPD: 160412.43 | JEPA Loss:   1.40 | SR: 1.24
+  Trial 294 | Epoch 290 | GP NLPD: 160020.88 | JEPA Loss:   1.35 | SR: 1.23
+  Trial 294 | Epoch 299 | GP NLPD: 158600.37 | JEPA Loss:   1.41 | SR: 1.22
+[I 2026-09-04 01:56:15,962] Trial 294 finished with values: [158600.3671875, 1.4084883381923041, -1.2213833729426067] and parameters: {'encoder_layers': 3, 'encoder_hidden': 64, 'latent_dim': 4, 'gp_num_inducing': 512, 'gp_kernel': 'RBF', 'gp_periodic': False, 'gp_composition': 'additive', 'gp_mean': 'Constant', 'lr': 0.00010585628393351758, 'gp_lr': 0.022099162682608333, 'var_weight': 45.83676974462478, 'cov_weight': 14.68500796888831, 'topo_weight': 6.614861157139179, 'ema_tau': 0.9924136063728428, 'aug_noise': 0.10059698345924838, 'aug_dropout': 0.2827340162228435}.
+  Trial 295: JIT compilation took 0.0s
+  Trial 295 | Epoch 000 | GP NLPD: 119407.46 | JEPA Loss:   1.70 | SR: 1.56
+  Trial 295 | Epoch 010 | GP NLPD: 144304.39 | JEPA Loss:   0.64 | SR: 2.06
+  Trial 295 | Epoch 020 | GP NLPD: 143343.00 | JEPA Loss:   0.63 | SR: 2.07
+  Trial 295 | Epoch 030 | GP NLPD: 138681.38 | JEPA Loss:   0.67 | SR: 1.79
+  Trial 295 | Epoch 040 | GP NLPD: 131817.33 | JEPA Loss:   0.67 | SR: 1.66
+  Trial 295 | Epoch 050 | GP NLPD: 126220.69 | JEPA Loss:   0.69 | SR: 1.65
+  Trial 295 | Epoch 060 | GP NLPD: 124044.21 | JEPA Loss:   0.69 | SR: 1.59
+  Trial 295 | Epoch 070 | GP NLPD: 124876.16 | JEPA Loss:   0.69 | SR: 1.62
+  Trial 295 | Epoch 080 | GP NLPD: 125609.28 | JEPA Loss:   0.72 | SR: 1.56
+  Trial 295 | Epoch 090 | GP NLPD: 127514.77 | JEPA Loss:   0.72 | SR: 1.54
+  Trial 295 | Epoch 100 | GP NLPD: 129378.33 | JEPA Loss:   0.74 | SR: 1.52
+  Trial 295 | Epoch 110 | GP NLPD: 130037.91 | JEPA Loss:   0.75 | SR: 1.47
+  Trial 295 | Epoch 120 | GP NLPD: 131288.10 | JEPA Loss:   0.80 | SR: 1.41
+  Trial 295 | Epoch 130 | GP NLPD: 131544.97 | JEPA Loss:   0.80 | SR: 1.39
+  Trial 295 | Epoch 140 | GP NLPD: 131932.08 | JEPA Loss:   0.80 | SR: 1.39
+  Trial 295 | Epoch 150 | GP NLPD: 131983.82 | JEPA Loss:   0.87 | SR: 1.31
+  Trial 295 | Epoch 160 | GP NLPD: 130543.37 | JEPA Loss:   0.88 | SR: 1.27
+  Trial 295 | Epoch 170 | GP NLPD: 129931.78 | JEPA Loss:   0.87 | SR: 1.28
+  Trial 295 | Epoch 180 | GP NLPD: 129698.17 | JEPA Loss:   0.97 | SR: 1.23
+  Trial 295 | Epoch 190 | GP NLPD: 128951.39 | JEPA Loss:   0.93 | SR: 1.23
+  Trial 295 | Epoch 200 | GP NLPD: 131053.20 | JEPA Loss:   0.85 | SR: 1.27
+  Trial 295 | Epoch 210 | GP NLPD: 132158.62 | JEPA Loss:   0.95 | SR: 1.23
+  Trial 295 | Epoch 220 | GP NLPD: 134053.17 | JEPA Loss:   0.92 | SR: 1.24
+  Trial 295 | Epoch 230 | GP NLPD: 134334.47 | JEPA Loss:   0.88 | SR: 1.26
+  Trial 295 | Epoch 240 | GP NLPD: 135430.85 | JEPA Loss:   0.89 | SR: 1.27
+  Trial 295 | Epoch 250 | GP NLPD: 135522.62 | JEPA Loss:   0.90 | SR: 1.25
+  Trial 295 | Epoch 260 | GP NLPD: 134911.68 | JEPA Loss:   0.89 | SR: 1.25
+  Trial 295 | Epoch 270 | GP NLPD: 134990.46 | JEPA Loss:   0.91 | SR: 1.28
+  Trial 295 | Epoch 280 | GP NLPD: 135326.90 | JEPA Loss:   1.00 | SR: 1.26
+  Trial 295 | Epoch 290 | GP NLPD: 133892.55 | JEPA Loss:   0.80 | SR: 1.42
+  Trial 295 | Epoch 299 | GP NLPD: 133407.58 | JEPA Loss:   0.82 | SR: 1.38
+[I 2026-09-04 01:57:13,665] Trial 295 finished with values: [123549.921875, 0.7049111127853394, -1.5916582147280376] and parameters: {'encoder_layers': 3, 'encoder_hidden': 64, 'latent_dim': 4, 'gp_num_inducing': 512, 'gp_kernel': 'Matern52', 'gp_periodic': True, 'gp_composition': 'multiplicative', 'gp_mean': 'Zero', 'lr': 0.0026544586619670126, 'gp_lr': 0.0024115016063732246, 'var_weight': 26.541671589402718, 'cov_weight': 36.32427556011761, 'topo_weight': 1.261097102094872, 'ema_tau': 0.9950552952983494, 'aug_noise': 0.09715031036948917, 'aug_dropout': 0.1288709725339051}.
+  Trial 296: JIT compilation took 0.0s
+  Trial 296 | Epoch 000 | GP NLPD: 142899.82 | JEPA Loss:   0.74 | SR: 2.43
+  Trial 296 | Epoch 010 | GP NLPD: 181596.50 | JEPA Loss:   0.58 | SR: 2.72
+  Trial 296 | Epoch 020 | GP NLPD: 179869.65 | JEPA Loss:   0.54 | SR: 2.76
+  Trial 296 | Epoch 030 | GP NLPD: 177079.19 | JEPA Loss:   0.66 | SR: 2.37
+  Trial 296 | Epoch 040 | GP NLPD: 173804.62 | JEPA Loss:   0.78 | SR: 2.12
+  Trial 296 | Epoch 050 | GP NLPD: 169878.54 | JEPA Loss:   0.92 | SR: 1.99
+  Trial 296 | Epoch 060 | GP NLPD: 167097.86 | JEPA Loss:   0.79 | SR: 1.90
+  Trial 296 | Epoch 070 | GP NLPD: 164487.67 | JEPA Loss:   0.81 | SR: 1.85
+  Trial 296 | Epoch 080 | GP NLPD: 164389.59 | JEPA Loss:   0.75 | SR: 1.88
+  Trial 296 | Epoch 090 | GP NLPD: 164473.59 | JEPA Loss:   0.76 | SR: 1.83
+  Trial 296 | Epoch 100 | GP NLPD: 164171.79 | JEPA Loss:   0.81 | SR: 1.72
+  Trial 296 | Epoch 110 | GP NLPD: 163344.75 | JEPA Loss:   0.84 | SR: 1.61
+  Trial 296 | Epoch 120 | GP NLPD: 164463.78 | JEPA Loss:   0.82 | SR: 1.62
+  Trial 296 | Epoch 130 | GP NLPD: 162910.52 | JEPA Loss:   0.80 | SR: 1.69
+  Trial 296 | Epoch 140 | GP NLPD: 161160.61 | JEPA Loss:   0.79 | SR: 1.69
+  Trial 296 | Epoch 150 | GP NLPD: 160475.53 | JEPA Loss:   0.79 | SR: 1.67
+  Trial 296 | Epoch 160 | GP NLPD: 160773.60 | JEPA Loss:   0.79 | SR: 1.64
+  Trial 296 | Epoch 170 | GP NLPD: 160664.04 | JEPA Loss:   0.80 | SR: 1.60
+  Trial 296 | Epoch 180 | GP NLPD: 161765.23 | JEPA Loss:   0.79 | SR: 1.60
+  Trial 296 | Epoch 190 | GP NLPD: 165073.29 | JEPA Loss:   0.82 | SR: 1.54
+  Trial 296 | Epoch 200 | GP NLPD: 166328.30 | JEPA Loss:   0.83 | SR: 1.52
+  Trial 296 | Epoch 210 | GP NLPD: 166639.51 | JEPA Loss:   0.85 | SR: 1.51
+  Trial 296 | Epoch 220 | GP NLPD: 166659.52 | JEPA Loss:   0.85 | SR: 1.57
+  Trial 296 | Epoch 230 | GP NLPD: 165931.29 | JEPA Loss:   0.87 | SR: 1.47
+  Trial 296 | Epoch 240 | GP NLPD: 164622.94 | JEPA Loss:   0.86 | SR: 1.56
+  Trial 296 | Epoch 250 | GP NLPD: 164196.38 | JEPA Loss:   0.89 | SR: 1.46
+  Trial 296 | Epoch 260 | GP NLPD: 161331.15 | JEPA Loss:   0.85 | SR: 1.54
+  Trial 296 | Epoch 270 | GP NLPD: 159670.99 | JEPA Loss:   0.85 | SR: 1.57
+  Trial 296 | Epoch 280 | GP NLPD: 156617.04 | JEPA Loss:   0.90 | SR: 1.56
+  Trial 296 | Epoch 290 | GP NLPD: 152973.01 | JEPA Loss:   0.91 | SR: 1.49
+  Trial 296 | Epoch 299 | GP NLPD: 149930.54 | JEPA Loss:   0.90 | SR: 1.40
+[I 2026-09-04 01:58:15,821] Trial 296 finished with values: [149888.37239583334, 0.8877458400093019, -1.436197837193807] and parameters: {'encoder_layers': 4, 'encoder_hidden': 64, 'latent_dim': 5, 'gp_num_inducing': 512, 'gp_kernel': 'Matern12', 'gp_periodic': True, 'gp_composition': 'multiplicative', 'gp_mean': 'Constant', 'lr': 0.0013419223490771853, 'gp_lr': 0.0020701956565521433, 'var_weight': 35.67779574304968, 'cov_weight': 35.49845855804052, 'topo_weight': 6.614861157139179, 'ema_tau': 0.9935049369898292, 'aug_noise': 0.13470575325760867, 'aug_dropout': 0.058093851281454306}.
+  Trial 297: JIT compilation took 0.0s
+  Trial 297 | Epoch 000 | GP NLPD: 150885.16 | JEPA Loss:   1.08 | SR: 1.78
+  Trial 297 | Epoch 010 | GP NLPD: 187981.27 | JEPA Loss:   0.68 | SR: 2.54
+  Trial 297 | Epoch 020 | GP NLPD: 180611.80 | JEPA Loss:   0.58 | SR: 2.30
+  Trial 297 | Epoch 030 | GP NLPD: 180201.62 | JEPA Loss:   0.63 | SR: 2.18
+  Trial 297 | Epoch 040 | GP NLPD: 181367.88 | JEPA Loss:   0.64 | SR: 2.11
+  Trial 297 | Epoch 050 | GP NLPD: 180364.53 | JEPA Loss:   0.68 | SR: 1.91
+  Trial 297 | Epoch 060 | GP NLPD: 181839.92 | JEPA Loss:   0.73 | SR: 1.70
+  Trial 297 | Epoch 070 | GP NLPD: 179287.56 | JEPA Loss:   0.67 | SR: 2.00
+  Trial 297 | Epoch 080 | GP NLPD: 179147.42 | JEPA Loss:   0.74 | SR: 1.83
+  Trial 297 | Epoch 090 | GP NLPD: 175192.47 | JEPA Loss:   0.73 | SR: 1.86
+  Trial 297 | Epoch 100 | GP NLPD: 168780.98 | JEPA Loss:   0.75 | SR: 1.94
+  Trial 297 | Epoch 110 | GP NLPD: 164313.92 | JEPA Loss:   0.73 | SR: 1.98
+  Trial 297 | Epoch 120 | GP NLPD: 163750.09 | JEPA Loss:   0.75 | SR: 1.96
+  Trial 297 | Epoch 130 | GP NLPD: 163685.65 | JEPA Loss:   0.76 | SR: 1.94
+  Trial 297 | Epoch 140 | GP NLPD: 161251.90 | JEPA Loss:   0.70 | SR: 1.97
+  Trial 297 | Epoch 150 | GP NLPD: 157540.65 | JEPA Loss:   0.74 | SR: 1.93
+  Trial 297 | Epoch 160 | GP NLPD: 153345.44 | JEPA Loss:   0.70 | SR: 1.91
+  Trial 297 | Epoch 170 | GP NLPD: 152624.41 | JEPA Loss:   0.79 | SR: 1.88
+  Trial 297 | Epoch 180 | GP NLPD: 149601.87 | JEPA Loss:   0.82 | SR: 1.86
+  Trial 297 | Epoch 190 | GP NLPD: 148378.13 | JEPA Loss:   0.80 | SR: 1.69
+  Trial 297 | Epoch 200 | GP NLPD: 146453.45 | JEPA Loss:   0.81 | SR: 1.75
+  Trial 297 | Epoch 210 | GP NLPD: 140128.39 | JEPA Loss:   0.92 | SR: 1.38
+  Trial 297 | Epoch 220 | GP NLPD: 140226.09 | JEPA Loss:   0.88 | SR: 1.42
+  Trial 297 | Epoch 230 | GP NLPD: 143057.89 | JEPA Loss:   0.76 | SR: 1.54
+  Trial 297 | Epoch 240 | GP NLPD: 141613.69 | JEPA Loss:   0.79 | SR: 1.47
+  Trial 297 | Epoch 250 | GP NLPD: 140735.34 | JEPA Loss:   0.76 | SR: 1.56
+  Trial 297 | Epoch 260 | GP NLPD: 138560.49 | JEPA Loss:   0.73 | SR: 1.58
+  Trial 297 | Epoch 270 | GP NLPD: 141537.37 | JEPA Loss:   0.74 | SR: 1.48
+  Trial 297 | Epoch 280 | GP NLPD: 142992.59 | JEPA Loss:   0.76 | SR: 1.38
+  Trial 297 | Epoch 290 | GP NLPD: 141493.58 | JEPA Loss:   0.76 | SR: 1.36
+  Trial 297 | Epoch 299 | GP NLPD: 136205.48 | JEPA Loss:   0.80 | SR: 1.22
+[I 2026-09-04 01:59:16,528] Trial 297 finished with values: [134348.33463541666, 0.7771883474197239, -1.3137440085411072] and parameters: {'encoder_layers': 4, 'encoder_hidden': 64, 'latent_dim': 5, 'gp_num_inducing': 512, 'gp_kernel': 'RBF', 'gp_periodic': False, 'gp_composition': 'multiplicative', 'gp_mean': 'Constant', 'lr': 0.0021026621158496657, 'gp_lr': 0.015958729947080228, 'var_weight': 44.989445248161914, 'cov_weight': 35.94053464226753, 'topo_weight': 9.77112555276282, 'ema_tau': 0.9924136063728428, 'aug_noise': 0.10059698345924838, 'aug_dropout': 0.058093851281454306}.
+  Trial 298: JIT compilation took 0.0s
+  Trial 298 | Epoch 000 | GP NLPD: 122678.14 | JEPA Loss:   0.70 | SR: 2.74
+  Trial 298 | Epoch 010 | GP NLPD: 158872.98 | JEPA Loss:   0.47 | SR: 3.26
+  Trial 298 | Epoch 020 | GP NLPD: 191116.51 | JEPA Loss:   0.63 | SR: 2.34
+  Trial 298 | Epoch 030 | GP NLPD: 208673.21 | JEPA Loss:   0.64 | SR: 2.24
+  Trial 298 | Epoch 040 | GP NLPD: 216935.89 | JEPA Loss:   0.69 | SR: 2.19
+  Trial 298 | Epoch 050 | GP NLPD: 222852.41 | JEPA Loss:   0.68 | SR: 2.15
+  Trial 298 | Epoch 060 | GP NLPD: 225985.14 | JEPA Loss:   0.68 | SR: 2.19
+  Trial 298 | Epoch 070 | GP NLPD: 226730.84 | JEPA Loss:   0.67 | SR: 2.24
+  Trial 298 | Epoch 080 | GP NLPD: 226668.34 | JEPA Loss:   0.69 | SR: 2.18
+  Trial 298 | Epoch 090 | GP NLPD: 227188.86 | JEPA Loss:   0.73 | SR: 2.12
+  Trial 298 | Epoch 100 | GP NLPD: 226635.32 | JEPA Loss:   0.82 | SR: 2.09
+  Trial 298 | Epoch 110 | GP NLPD: 226823.89 | JEPA Loss:   0.82 | SR: 2.16
+  Trial 298 | Epoch 120 | GP NLPD: 225450.66 | JEPA Loss:   0.84 | SR: 2.17
+  Trial 298 | Epoch 130 | GP NLPD: 223933.95 | JEPA Loss:   0.82 | SR: 2.30
+  Trial 298 | Epoch 140 | GP NLPD: 221931.12 | JEPA Loss:   0.85 | SR: 2.24
+  Trial 298 | Epoch 150 | GP NLPD: 219744.27 | JEPA Loss:   0.89 | SR: 2.31
+  Trial 298 | Epoch 160 | GP NLPD: 216294.88 | JEPA Loss:   0.90 | SR: 2.41
+  Trial 298 | Epoch 170 | GP NLPD: 213211.02 | JEPA Loss:   0.90 | SR: 2.37
+  Trial 298 | Epoch 180 | GP NLPD: 210425.38 | JEPA Loss:   0.93 | SR: 2.45
+  Trial 298 | Epoch 190 | GP NLPD: 207940.88 | JEPA Loss:   0.94 | SR: 2.40
+  Trial 298 | Epoch 200 | GP NLPD: 205557.31 | JEPA Loss:   0.94 | SR: 2.47
+  Trial 298 | Epoch 210 | GP NLPD: 203732.76 | JEPA Loss:   1.00 | SR: 2.41
+  Trial 298 | Epoch 220 | GP NLPD: 202203.45 | JEPA Loss:   1.02 | SR: 2.48
+  Trial 298 | Epoch 230 | GP NLPD: 200847.03 | JEPA Loss:   1.01 | SR: 2.50
+  Trial 298 | Epoch 240 | GP NLPD: 199258.12 | JEPA Loss:   1.00 | SR: 2.56
+  Trial 298 | Epoch 250 | GP NLPD: 197747.94 | JEPA Loss:   0.99 | SR: 2.55
+  Trial 298 | Epoch 260 | GP NLPD: 196298.78 | JEPA Loss:   0.94 | SR: 2.55
+  Trial 298 | Epoch 270 | GP NLPD: 195032.09 | JEPA Loss:   0.97 | SR: 2.60
+  Trial 298 | Epoch 280 | GP NLPD: 193354.04 | JEPA Loss:   0.93 | SR: 2.57
+  Trial 298 | Epoch 290 | GP NLPD: 192956.17 | JEPA Loss:   0.93 | SR: 2.55
+  Trial 298 | Epoch 299 | GP NLPD: 192525.73 | JEPA Loss:   0.96 | SR: 2.51
+[I 2026-09-04 02:00:00,607] Trial 298 finished with values: [192072.35416666666, 0.9674140537778537, -2.523016651471456] and parameters: {'encoder_layers': 4, 'encoder_hidden': 32, 'latent_dim': 6, 'gp_num_inducing': 128, 'gp_kernel': 'Matern12', 'gp_periodic': False, 'gp_composition': 'additive', 'gp_mean': 'Zero', 'lr': 0.0002166595521301043, 'gp_lr': 0.046773676598639256, 'var_weight': 27.8191887647068, 'cov_weight': 45.197479452435736, 'topo_weight': 9.77112555276282, 'ema_tau': 0.997537370037809, 'aug_noise': 0.10916436997821972, 'aug_dropout': 0.15342346279266736}.
+  Trial 299: JIT compilation took 0.0s
+  Trial 299 | Epoch 000 | GP NLPD: 186219.57 | JEPA Loss:   1.30 | SR: 1.70
+  Trial 299 | Epoch 010 | GP NLPD: 248277.17 | JEPA Loss:   2.77 | SR: 1.50
+  Trial 299 | Epoch 020 | GP NLPD: 275809.42 | JEPA Loss:   1.31 | SR: 1.60
+  Trial 299 | Epoch 030 | GP NLPD: 279477.53 | JEPA Loss:   2.09 | SR: 1.39
+  Trial 299 | Epoch 040 | GP NLPD: 276197.27 | JEPA Loss:   5.33 | SR: 1.41
+  Trial 299 | Epoch 050 | GP NLPD: 267791.19 | JEPA Loss:   4.90 | SR: 1.32
+  Trial 299 | Epoch 060 | GP NLPD: 259674.01 | JEPA Loss:   3.20 | SR: 1.32
+  Trial 299 | Epoch 070 | GP NLPD: 251745.56 | JEPA Loss:   3.64 | SR: 1.26
+  Trial 299 | Epoch 080 | GP NLPD: 245237.99 | JEPA Loss:   2.11 | SR: 1.71
+  Trial 299 | Epoch 090 | GP NLPD: 241992.13 | JEPA Loss:   3.26 | SR: 1.36
+  Trial 299 | Epoch 100 | GP NLPD: 236620.05 | JEPA Loss:   1.05 | SR: 1.97
+  Trial 299 | Epoch 110 | GP NLPD: 232082.15 | JEPA Loss:   1.49 | SR: 1.48
+  Trial 299 | Epoch 120 | GP NLPD: 228222.59 | JEPA Loss:   1.33 | SR: 1.45
+  Trial 299 | Epoch 130 | GP NLPD: 223854.59 | JEPA Loss:   0.75 | SR: 2.08
+  Trial 299 | Epoch 140 | GP NLPD: 219463.58 | JEPA Loss:   0.74 | SR: 1.82
+  Trial 299 | Epoch 150 | GP NLPD: 212773.62 | JEPA Loss:   0.83 | SR: 1.55
+  Trial 299 | Epoch 160 | GP NLPD: 206687.91 | JEPA Loss:   0.73 | SR: 1.89
+  Trial 299 | Epoch 170 | GP NLPD: 206220.22 | JEPA Loss:   0.72 | SR: 2.08
+  Trial 299 | Epoch 180 | GP NLPD: 206283.05 | JEPA Loss:   0.66 | SR: 2.14
+  Trial 299 | Epoch 190 | GP NLPD: 209673.53 | JEPA Loss:   0.71 | SR: 2.24
+  Trial 299 | Epoch 200 | GP NLPD: 211230.18 | JEPA Loss:   0.77 | SR: 2.09
+  Trial 299 | Epoch 210 | GP NLPD: 211680.30 | JEPA Loss:   0.73 | SR: 2.26
+  Trial 299 | Epoch 220 | GP NLPD: 209381.28 | JEPA Loss:   0.74 | SR: 2.02
+  Trial 299 | Epoch 230 | GP NLPD: 208064.06 | JEPA Loss:   0.73 | SR: 2.06
+  Trial 299 | Epoch 240 | GP NLPD: 206128.09 | JEPA Loss:   0.81 | SR: 1.95
+  Trial 299 | Epoch 250 | GP NLPD: 201289.69 | JEPA Loss:   0.83 | SR: 1.56
+  Trial 299 | Epoch 260 | GP NLPD: 196158.24 | JEPA Loss:   0.79 | SR: 1.92
+  Trial 299 | Epoch 270 | GP NLPD: 191354.45 | JEPA Loss:   0.80 | SR: 1.91
+  Trial 299 | Epoch 280 | GP NLPD: 193493.39 | JEPA Loss:   0.82 | SR: 1.55
+  Trial 299 | Epoch 290 | GP NLPD: 197976.07 | JEPA Loss:   0.91 | SR: 1.65
+  Trial 299 | Epoch 299 | GP NLPD: 198399.23 | JEPA Loss:   1.04 | SR: 1.63
+[I 2026-09-04 02:02:37,526] Trial 299 finished with values: [190617.21614583334, 0.7661674239983162, -1.7704750895500183] and parameters: {'encoder_layers': 8, 'encoder_hidden': 128, 'latent_dim': 6, 'gp_num_inducing': 512, 'gp_kernel': 'Matern52', 'gp_periodic': True, 'gp_composition': 'additive', 'gp_mean': 'Zero', 'lr': 0.0008681408145019698, 'gp_lr': 0.0014766334363168912, 'var_weight': 46.65452112592987, 'cov_weight': 45.73907155823622, 'topo_weight': 4.244958642153724, 'ema_tau': 0.997626792078338, 'aug_noise': 0.10916436997821972, 'aug_dropout': 0.37820998322702737}.
+  Trial 300: JIT compilation took 0.0s
+  Trial 300 | Epoch 000 | GP NLPD: 161590.71 | JEPA Loss:   0.67 | SR: 2.09
+  Trial 300 | Epoch 010 | GP NLPD: 216719.26 | JEPA Loss:   0.70 | SR: 2.14
+  Trial 300 | Epoch 020 | GP NLPD: 201028.30 | JEPA Loss:   0.75 | SR: 1.92
+  Trial 300 | Epoch 030 | GP NLPD: 192948.60 | JEPA Loss:   0.76 | SR: 1.88
+  Trial 300 | Epoch 040 | GP NLPD: 192531.32 | JEPA Loss:   0.76 | SR: 1.85
+  Trial 300 | Epoch 050 | GP NLPD: 198067.87 | JEPA Loss:   0.78 | SR: 1.90
+  Trial 300 | Epoch 060 | GP NLPD: 200614.90 | JEPA Loss:   0.75 | SR: 1.94
+  Trial 300 | Epoch 070 | GP NLPD: 202678.85 | JEPA Loss:   0.75 | SR: 1.98
+  Trial 300 | Epoch 080 | GP NLPD: 204742.61 | JEPA Loss:   0.82 | SR: 1.99
+  Trial 300 | Epoch 090 | GP NLPD: 206005.75 | JEPA Loss:   0.80 | SR: 2.02
+  Trial 300 | Epoch 100 | GP NLPD: 206690.45 | JEPA Loss:   0.82 | SR: 2.00
+  Trial 300 | Epoch 110 | GP NLPD: 206086.18 | JEPA Loss:   0.79 | SR: 2.04
+  Trial 300 | Epoch 120 | GP NLPD: 205684.37 | JEPA Loss:   0.80 | SR: 2.04
+  Trial 300 | Epoch 130 | GP NLPD: 204145.34 | JEPA Loss:   0.89 | SR: 2.03
+  Trial 300 | Epoch 140 | GP NLPD: 203456.59 | JEPA Loss:   0.90 | SR: 2.05
+  Trial 300 | Epoch 150 | GP NLPD: 201588.64 | JEPA Loss:   0.85 | SR: 2.08
+  Trial 300 | Epoch 160 | GP NLPD: 199344.81 | JEPA Loss:   0.76 | SR: 2.11
+  Trial 300 | Epoch 170 | GP NLPD: 198284.93 | JEPA Loss:   0.79 | SR: 2.10
+  Trial 300 | Epoch 180 | GP NLPD: 197194.28 | JEPA Loss:   0.74 | SR: 2.11
+  Trial 300 | Epoch 190 | GP NLPD: 196558.34 | JEPA Loss:   0.73 | SR: 2.11
+  Trial 300 | Epoch 200 | GP NLPD: 194975.47 | JEPA Loss:   0.71 | SR: 2.16
+  Trial 300 | Epoch 210 | GP NLPD: 194144.17 | JEPA Loss:   0.70 | SR: 2.08
+  Trial 300 | Epoch 220 | GP NLPD: 194502.95 | JEPA Loss:   0.76 | SR: 2.08
+  Trial 300 | Epoch 230 | GP NLPD: 193901.47 | JEPA Loss:   0.74 | SR: 2.15
+  Trial 300 | Epoch 240 | GP NLPD: 193450.20 | JEPA Loss:   0.75 | SR: 2.12
+  Trial 300 | Epoch 250 | GP NLPD: 192175.28 | JEPA Loss:   0.70 | SR: 2.15
+  Trial 300 | Epoch 260 | GP NLPD: 192198.35 | JEPA Loss:   0.74 | SR: 2.09
+  Trial 300 | Epoch 270 | GP NLPD: 190620.02 | JEPA Loss:   0.73 | SR: 2.12
+  Trial 300 | Epoch 280 | GP NLPD: 189975.44 | JEPA Loss:   0.70 | SR: 2.18
+  Trial 300 | Epoch 290 | GP NLPD: 190126.40 | JEPA Loss:   0.77 | SR: 2.08
+  Trial 300 | Epoch 299 | GP NLPD: 188710.25 | JEPA Loss:   0.76 | SR: 2.10
+[I 2026-09-04 02:03:31,194] Trial 300 finished with values: [188707.6171875, 0.7629685004552206, -2.1290009220441184] and parameters: {'encoder_layers': 2, 'encoder_hidden': 64, 'latent_dim': 5, 'gp_num_inducing': 512, 'gp_kernel': 'Matern12', 'gp_periodic': True, 'gp_composition': 'multiplicative', 'gp_mean': 'Constant', 'lr': 0.0008681408145019698, 'gp_lr': 0.0023841512332762613, 'var_weight': 37.67043808302011, 'cov_weight': 16.54982175160469, 'topo_weight': 8.799669310113975, 'ema_tau': 0.9955110314870875, 'aug_noise': 0.09555620370779838, 'aug_dropout': 0.2807929211166537}.
+
+============================================================
+🏆 Pareto Front Discovered
+============================================================
+Trial 12: GP NLPD=407628.24, JEPA Loss=1.02, Stable Rank=4.39
+  Params: {'encoder_layers': 8, 'encoder_hidden': 32, 'latent_dim': 12, 'gp_num_inducing': 512, 'gp_kernel': 'Matern12', 'gp_periodic': False, 'gp_composition': 'multiplicative', 'gp_mean': 'Zero', 'lr': 0.0006476492621460449, 'gp_lr': 0.045159237153977336, 'var_weight': 27.64770034415326, 'cov_weight': 33.112013993879174, 'topo_weight': 3.812946716518626, 'ema_tau': 0.9979167910511472, 'aug_noise': 0.19572929476341205, 'aug_dropout': 0.12189262041542324}
+
+Trial 13: GP NLPD=293388.63, JEPA Loss=0.75, Stable Rank=3.86
+  Params: {'encoder_layers': 4, 'encoder_hidden': 64, 'latent_dim': 10, 'gp_num_inducing': 512, 'gp_kernel': 'Matern12', 'gp_periodic': False, 'gp_composition': 'multiplicative', 'gp_mean': 'Zero', 'lr': 0.0008681408145019698, 'gp_lr': 0.046773676598639256, 'var_weight': 39.53839102778835, 'cov_weight': 45.73907155823622, 'topo_weight': 9.932749137372326, 'ema_tau': 0.997537370037809, 'aug_noise': 0.006043201682375577, 'aug_dropout': 0.07093422996100088}
+
+Trial 47: GP NLPD=90473.45, JEPA Loss=0.93, Stable Rank=1.13
+  Params: {'encoder_layers': 8, 'encoder_hidden': 64, 'latent_dim': 4, 'gp_num_inducing': 256, 'gp_kernel': 'Matern52', 'gp_periodic': True, 'gp_composition': 'additive', 'gp_mean': 'Zero', 'lr': 0.0034146482773581557, 'gp_lr': 0.04295606675611089, 'var_weight': 27.943711574005693, 'cov_weight': 24.84972163191404, 'topo_weight': 4.244958642153724, 'ema_tau': 0.9930349951350527, 'aug_noise': 0.14440675376697032, 'aug_dropout': 0.1621221668486078}
+
+Trial 66: GP NLPD=113987.79, JEPA Loss=0.73, Stable Rank=1.40
+  Params: {'encoder_layers': 3, 'encoder_hidden': 64, 'latent_dim': 4, 'gp_num_inducing': 512, 'gp_kernel': 'Matern52', 'gp_periodic': False, 'gp_composition': 'multiplicative', 'gp_mean': 'Zero', 'lr': 0.0008681408145019698, 'gp_lr': 0.028666793992365224, 'var_weight': 39.53839102778835, 'cov_weight': 16.54982175160469, 'topo_weight': 7.574913438894285, 'ema_tau': 0.9918750151095945, 'aug_noise': 0.006043201682375577, 'aug_dropout': 0.07093422996100088}
+
+Trial 110: GP NLPD=114693.95, JEPA Loss=0.66, Stable Rank=1.93
+  Params: {'encoder_layers': 3, 'encoder_hidden': 64, 'latent_dim': 4, 'gp_num_inducing': 256, 'gp_kernel': 'Matern52', 'gp_periodic': True, 'gp_composition': 'multiplicative', 'gp_mean': 'Zero', 'lr': 0.0026544586619670126, 'gp_lr': 0.0024115016063732246, 'var_weight': 26.541671589402718, 'cov_weight': 36.32427556011761, 'topo_weight': 1.261097102094872, 'ema_tau': 0.9950552952983494, 'aug_noise': 0.09715031036948917, 'aug_dropout': 0.1288709725339051}
+
+Trial 112: GP NLPD=122294.91, JEPA Loss=0.72, Stable Rank=2.10
+  Params: {'encoder_layers': 2, 'encoder_hidden': 128, 'latent_dim': 5, 'gp_num_inducing': 512, 'gp_kernel': 'Matern12', 'gp_periodic': True, 'gp_composition': 'multiplicative', 'gp_mean': 'Constant', 'lr': 0.00022669028674930433, 'gp_lr': 0.02752425029014942, 'var_weight': 37.67043808302011, 'cov_weight': 37.71319167546947, 'topo_weight': 8.799669310113975, 'ema_tau': 0.9934294732576641, 'aug_noise': 0.09555620370779838, 'aug_dropout': 0.23988826467822622}
+
+Trial 115: GP NLPD=180723.36, JEPA Loss=0.64, Stable Rank=2.22
+  Params: {'encoder_layers': 4, 'encoder_hidden': 64, 'latent_dim': 6, 'gp_num_inducing': 512, 'gp_kernel': 'Matern12', 'gp_periodic': False, 'gp_composition': 'additive', 'gp_mean': 'Zero', 'lr': 0.0017353034738183857, 'gp_lr': 0.0020665789346112607, 'var_weight': 32.07060312329968, 'cov_weight': 40.536142928426436, 'topo_weight': 5.260972813724492, 'ema_tau': 0.997537370037809, 'aug_noise': 0.15304983261181604, 'aug_dropout': 0.1347994477957317}
+
+Trial 123: GP NLPD=123431.78, JEPA Loss=0.58, Stable Rank=2.09
+  Params: {'encoder_layers': 2, 'encoder_hidden': 32, 'latent_dim': 4, 'gp_num_inducing': 256, 'gp_kernel': 'RBF', 'gp_periodic': False, 'gp_composition': 'multiplicative', 'gp_mean': 'Constant', 'lr': 0.0017046177416416822, 'gp_lr': 0.015958729947080228, 'var_weight': 22.86628996503969, 'cov_weight': 48.0288251767834, 'topo_weight': 4.629866469735148, 'ema_tau': 0.9924136063728428, 'aug_noise': 0.026102268557593213, 'aug_dropout': 0.08333322854493784}
+
+Trial 153: GP NLPD=319276.30, JEPA Loss=0.69, Stable Rank=3.73
+  Params: {'encoder_layers': 4, 'encoder_hidden': 64, 'latent_dim': 10, 'gp_num_inducing': 512, 'gp_kernel': 'Matern12', 'gp_periodic': False, 'gp_composition': 'multiplicative', 'gp_mean': 'Constant', 'lr': 0.0008681408145019698, 'gp_lr': 0.046773676598639256, 'var_weight': 46.65452112592987, 'cov_weight': 45.73907155823622, 'topo_weight': 9.77112555276282, 'ema_tau': 0.997537370037809, 'aug_noise': 0.10916436997821972, 'aug_dropout': 0.07093422996100088}
+
+Trial 158: GP NLPD=162225.86, JEPA Loss=0.67, Stable Rank=2.21
+  Params: {'encoder_layers': 3, 'encoder_hidden': 32, 'latent_dim': 5, 'gp_num_inducing': 512, 'gp_kernel': 'RBF', 'gp_periodic': False, 'gp_composition': 'additive', 'gp_mean': 'Constant', 'lr': 0.0019813680245228385, 'gp_lr': 0.015958729947080228, 'var_weight': 32.07060312329968, 'cov_weight': 27.571508099224296, 'topo_weight': 5.260972813724492, 'ema_tau': 0.9974158937221028, 'aug_noise': 0.10059698345924838, 'aug_dropout': 0.1347994477957317}
+
+Trial 174: GP NLPD=111955.30, JEPA Loss=0.74, Stable Rank=1.58
+  Params: {'encoder_layers': 3, 'encoder_hidden': 32, 'latent_dim': 4, 'gp_num_inducing': 256, 'gp_kernel': 'Matern52', 'gp_periodic': False, 'gp_composition': 'multiplicative', 'gp_mean': 'Constant', 'lr': 0.00030287453488654767, 'gp_lr': 0.0024115016063732246, 'var_weight': 13.976881155514263, 'cov_weight': 36.32427556011761, 'topo_weight': 6.48633086416392, 'ema_tau': 0.995972396994605, 'aug_noise': 0.026102268557593213, 'aug_dropout': 0.08333322854493784}
+
+Trial 175: GP NLPD=182713.50, JEPA Loss=0.64, Stable Rank=2.40
+  Params: {'encoder_layers': 2, 'encoder_hidden': 32, 'latent_dim': 6, 'gp_num_inducing': 128, 'gp_kernel': 'Matern12', 'gp_periodic': False, 'gp_composition': 'additive', 'gp_mean': 'Zero', 'lr': 0.0002166595521301043, 'gp_lr': 0.002228851271591878, 'var_weight': 27.8191887647068, 'cov_weight': 45.197479452435736, 'topo_weight': 2.804988248611534, 'ema_tau': 0.9917082375834424, 'aug_noise': 0.15544662188828307, 'aug_dropout': 0.15342346279266736}
+
+Trial 189: GP NLPD=204688.33, JEPA Loss=0.61, Stable Rank=2.68
+  Params: {'encoder_layers': 3, 'encoder_hidden': 32, 'latent_dim': 6, 'gp_num_inducing': 256, 'gp_kernel': 'Matern52', 'gp_periodic': False, 'gp_composition': 'additive', 'gp_mean': 'Zero', 'lr': 0.0002166595521301043, 'gp_lr': 0.0014766334363168912, 'var_weight': 27.8191887647068, 'cov_weight': 45.197479452435736, 'topo_weight': 4.498129400339861, 'ema_tau': 0.997626792078338, 'aug_noise': 0.014985874025191737, 'aug_dropout': 0.15342346279266736}
+
+Trial 203: GP NLPD=96095.29, JEPA Loss=0.75, Stable Rank=1.57
+  Params: {'encoder_layers': 6, 'encoder_hidden': 32, 'latent_dim': 4, 'gp_num_inducing': 256, 'gp_kernel': 'Matern52', 'gp_periodic': True, 'gp_composition': 'multiplicative', 'gp_mean': 'Zero', 'lr': 0.0002166595521301043, 'gp_lr': 0.04084637411263172, 'var_weight': 26.541671589402718, 'cov_weight': 13.446167753076463, 'topo_weight': 4.498129400339861, 'ema_tau': 0.997626792078338, 'aug_noise': 0.09094478248408536, 'aug_dropout': 0.15342346279266736}
+
+Trial 206: GP NLPD=245445.34, JEPA Loss=0.83, Stable Rank=3.20
+  Params: {'encoder_layers': 3, 'encoder_hidden': 32, 'latent_dim': 10, 'gp_num_inducing': 256, 'gp_kernel': 'RBF', 'gp_periodic': True, 'gp_composition': 'additive', 'gp_mean': 'Constant', 'lr': 0.00016840094149922307, 'gp_lr': 0.005279939473978658, 'var_weight': 22.86628996503969, 'cov_weight': 40.536142928426436, 'topo_weight': 4.498129400339861, 'ema_tau': 0.997626792078338, 'aug_noise': 0.026102268557593213, 'aug_dropout': 0.08333322854493784}
+
+Trial 221: GP NLPD=108570.56, JEPA Loss=0.74, Stable Rank=1.50
+  Params: {'encoder_layers': 3, 'encoder_hidden': 32, 'latent_dim': 4, 'gp_num_inducing': 512, 'gp_kernel': 'RBF', 'gp_periodic': False, 'gp_composition': 'multiplicative', 'gp_mean': 'Zero', 'lr': 0.0008681408145019698, 'gp_lr': 0.015958729947080228, 'var_weight': 18.700133437350694, 'cov_weight': 14.68500796888831, 'topo_weight': 4.028345317916497, 'ema_tau': 0.9924136063728428, 'aug_noise': 0.19572929476341205, 'aug_dropout': 0.19866561798641685}
+
+Trial 226: GP NLPD=272390.47, JEPA Loss=0.72, Stable Rank=3.16
+  Params: {'encoder_layers': 2, 'encoder_hidden': 128, 'latent_dim': 9, 'gp_num_inducing': 128, 'gp_kernel': 'RBF', 'gp_periodic': True, 'gp_composition': 'additive', 'gp_mean': 'Zero', 'lr': 0.00022669028674930433, 'gp_lr': 0.02752425029014942, 'var_weight': 17.07848840260866, 'cov_weight': 37.71319167546947, 'topo_weight': 8.799669310113975, 'ema_tau': 0.9934294732576641, 'aug_noise': 0.15304983261181604, 'aug_dropout': 0.23988826467822622}
+
+Trial 229: GP NLPD=344785.24, JEPA Loss=0.76, Stable Rank=4.03
+  Params: {'encoder_layers': 3, 'encoder_hidden': 128, 'latent_dim': 10, 'gp_num_inducing': 512, 'gp_kernel': 'Matern12', 'gp_periodic': False, 'gp_composition': 'multiplicative', 'gp_mean': 'Constant', 'lr': 0.00442464464801017, 'gp_lr': 0.005279939473978658, 'var_weight': 46.65452112592987, 'cov_weight': 40.536142928426436, 'topo_weight': 9.77112555276282, 'ema_tau': 0.9975560980019411, 'aug_noise': 0.10916436997821972, 'aug_dropout': 0.07093422996100088}
+
+Trial 250: GP NLPD=183578.85, JEPA Loss=0.62, Stable Rank=2.82
+  Params: {'encoder_layers': 3, 'encoder_hidden': 64, 'latent_dim': 6, 'gp_num_inducing': 512, 'gp_kernel': 'Matern32', 'gp_periodic': False, 'gp_composition': 'additive', 'gp_mean': 'Constant', 'lr': 0.0008681408145019698, 'gp_lr': 0.0014766334363168912, 'var_weight': 46.65452112592987, 'cov_weight': 45.73907155823622, 'topo_weight': 9.77112555276282, 'ema_tau': 0.997626792078338, 'aug_noise': 0.10916436997821972, 'aug_dropout': 0.37820998322702737}
+
+Trial 252: GP NLPD=108832.90, JEPA Loss=0.75, Stable Rank=2.08
+  Params: {'encoder_layers': 3, 'encoder_hidden': 64, 'latent_dim': 4, 'gp_num_inducing': 512, 'gp_kernel': 'RBF', 'gp_periodic': True, 'gp_composition': 'multiplicative', 'gp_mean': 'Constant', 'lr': 0.0008681408145019698, 'gp_lr': 0.015958729947080228, 'var_weight': 39.53839102778835, 'cov_weight': 16.54982175160469, 'topo_weight': 7.574913438894285, 'ema_tau': 0.9918750151095945, 'aug_noise': 0.10059698345924838, 'aug_dropout': 0.2807929211166537}
+
+Trial 266: GP NLPD=165776.79, JEPA Loss=0.71, Stable Rank=2.23
+  Params: {'encoder_layers': 3, 'encoder_hidden': 32, 'latent_dim': 5, 'gp_num_inducing': 512, 'gp_kernel': 'RBF', 'gp_periodic': False, 'gp_composition': 'additive', 'gp_mean': 'Constant', 'lr': 0.00010585628393351758, 'gp_lr': 0.015958729947080228, 'var_weight': 23.667407163245837, 'cov_weight': 27.571508099224296, 'topo_weight': 6.614861157139179, 'ema_tau': 0.9974158937221028, 'aug_noise': 0.10059698345924838, 'aug_dropout': 0.1347994477957317}
+
+Trial 275: GP NLPD=144993.21, JEPA Loss=0.51, Stable Rank=2.20
+  Params: {'encoder_layers': 4, 'encoder_hidden': 32, 'latent_dim': 4, 'gp_num_inducing': 512, 'gp_kernel': 'Matern12', 'gp_periodic': False, 'gp_composition': 'multiplicative', 'gp_mean': 'Constant', 'lr': 0.0011249368338126118, 'gp_lr': 0.01456051937653252, 'var_weight': 46.65452112592987, 'cov_weight': 37.71319167546947, 'topo_weight': 8.799669310113975, 'ema_tau': 0.9955110314870875, 'aug_noise': 0.10916436997821972, 'aug_dropout': 0.23988826467822622}
+
+Trial 292: GP NLPD=279116.98, JEPA Loss=0.65, Stable Rank=3.34
+  Params: {'encoder_layers': 4, 'encoder_hidden': 64, 'latent_dim': 9, 'gp_num_inducing': 512, 'gp_kernel': 'Matern52', 'gp_periodic': True, 'gp_composition': 'additive', 'gp_mean': 'Zero', 'lr': 0.0002166595521301043, 'gp_lr': 0.0023815408275889654, 'var_weight': 15.954275211875819, 'cov_weight': 44.334893952817794, 'topo_weight': 4.498129400339861, 'ema_tau': 0.9917082375834424, 'aug_noise': 0.09508627802450437, 'aug_dropout': 0.15342346279266736}

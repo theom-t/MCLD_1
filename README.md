@@ -12,7 +12,10 @@ MCLD-1 is a self-supervised quantitative framework designed to:
   - *Curated 34 Sovereign Nations across 23 core Dalio-cycle macroeconomic features (1950-2025).*
   - *Successfully built strict backward-looking bitemporal ingestion pipeline.*
   - *Pivoted stationarity engine to Reversible Instance Normalization (RevIN) to preserve secular memory.*
-- **Stage 2 (Temporal-JEPA):** 🚧 **[IN PROGRESS]**
+- **Stage 2 (Temporal-JEPA):** ✅ **[COMPLETED]**
+  - *Engineered pure Flax functional architecture (RevIN + Causal TCN).*
+  - *Ported advanced PID-Variance and Macro-Topological Metric Learning from V-JEPA.*
+  - *End-to-end XLA step execution: ~1.0 millisecond.*
 - **Stage 3 (SVGP Latent Dynamics):** ⏳ Pending
 - **Stage 4 (Risk Budgeting):** ⏳ Pending
 - **Stage 5 (Friction-Aware Backtest):** ⏳ Pending
